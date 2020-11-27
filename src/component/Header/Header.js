@@ -67,35 +67,35 @@ const Header = () => {
                   </li>
                   <li className={"ulTopLeftItem"}>
                     <i className="fa fa-clock-o"></i>
-                    <a>Open Hours 09:00 am - 06:00 pm</a>
+                    <a href="/">Open Hours 09:00 am - 06:00 pm</a>
                   </li>
                 </ul>
               </div>
               <div className={"topRight"}>
                 <ul className={"ulTopRight"}>
                   <li className={"ulTopRightItem"}>
-                    <a href="#">
+                    <a href="/">
                       <i className="fa fa-facebook"></i>
                     </a>
                   </li>
                   <li className={"ulTopLeftItem"}></li>
                   <li className={"ulTopRightItem"}>
-                    <a href="#">
+                    <a href="/">
                       <i className="fa fa-twitter"></i>
                     </a>
                   </li>
                   <li className={"ulTopRightItem"}>
-                    <a href="#">
+                    <a href="/">
                       <i className="fa fa-google-plus"></i>
                     </a>
                   </li>
                   <li className={"ulTopRightItem"}>
-                    <a href="#">
+                    <a href="/">
                       <i className="fa fa-linkedin"></i>
                     </a>
                   </li>
                   <li className={"ulTopRightItem"}>
-                    <a href="#">
+                    <a href="/">
                       <i className="fa fa-pinterest"></i>
                     </a>
                   </li>
@@ -107,7 +107,7 @@ const Header = () => {
           {/* nav bottom */}
           <div className={"bottomBar"}>
             <div className={"wrapper  container"}>
-              <a className={"brand navbar-brand"} href="#">
+              <a className={"brand navbar-brand"} href="/">
                 <img src={logo} className="logo-dark" alt="logo" />
               </a>
               <span className={"navToggler"} onClick={handleToggle}>
@@ -128,7 +128,7 @@ const Header = () => {
                   ref={dropElement1}
                   onClick={() => expandHandler("companys")}
                 >
-                  <a>
+                  <a href="/">
                     Companys<i className="fa fa-chevron-down"></i>
                     <i
                       className={
@@ -171,7 +171,7 @@ const Header = () => {
                   ref={dropElement2}
                   onClick={() => expandHandler("services")}
                 >
-                  <a>
+                  <a href="/">
                     Services<i className="fa fa-chevron-down"></i>
                     <i
                       className={

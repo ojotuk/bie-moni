@@ -17,7 +17,7 @@ const Landing = () => {
       {/* abouts us starts */}
       <section className={styles.aboutUsSection}>
         <div className={styles.patternDiv}>
-          <img src={pattern} />
+          <img src={pattern} alt="pattern" />
         </div>
         <div className={styles.container + " container"}>
           <div className={styles.row + " row"}>

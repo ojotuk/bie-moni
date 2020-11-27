@@ -71,13 +71,17 @@ const ContentOne = ({ slide }) => {
           <div className={styles.ctaContainer}>
             <div className={styles.ctaWrapper1}>
               <Link href={descriptionSlide[0].link}>
-                <a className={styles.aboutUsBtn}>About Us</a>
+                <a className={styles.aboutUsBtn} href="/">
+                  About Us
+                </a>
                 <span className={styles.colorSlide}></span>
               </Link>
             </div>
             <div className={styles.ctaWrapper2}>
               <Link href={descriptionSlide[0].link}>
-                <a className={styles.aboutUsBtn}>Our Services</a>
+                <a className={styles.aboutUsBtn} href="/">
+                  Our Services
+                </a>
                 <span className={styles.colorSlide}></span>
               </Link>
             </div>
@@ -116,13 +120,17 @@ const ContentTwo = ({ slide }) => {
           <div className={styles.ctaContainer}>
             <div className={styles.ctaWrapper1}>
               <Link href={descriptionSlide[1].link}>
-                <a className={styles.aboutUsBtn}>About Us</a>
+                <a className={styles.aboutUsBtn} href="/">
+                  About Us
+                </a>
                 <span className={styles.colorSlide}></span>
               </Link>
             </div>
             <div className={styles.ctaWrapper2}>
               <Link href={descriptionSlide[1].link}>
-                <a className={styles.aboutUsBtn}>Our Services</a>
+                <a className={styles.aboutUsBtn} href="/">
+                  Our Services
+                </a>
                 <span className={styles.colorSlide}></span>
               </Link>
             </div>
@@ -146,14 +154,14 @@ const SlideBg01 = () => {
   useEffect(() => {
     scaleBg(el);
   });
-  return <img src={slide01} ref={(element) => (el = element)} />;
+  return <img src={slide01} ref={(element) => (el = element)} alt="civil" />;
 };
 const SlideBg02 = () => {
   let el = useRef(null);
   useEffect(() => {
     scaleBg(el);
   });
-  return <img src={slide02} ref={(element) => (el = element)} />;
+  return <img src={slide02} ref={(element) => (el = element)} alt="civil" />;
 };
 
 const Hero = (props) => {
