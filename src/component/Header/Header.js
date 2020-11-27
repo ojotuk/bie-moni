@@ -16,7 +16,7 @@ const Header = () => {
     return setScreenSizeChange(window.innerWidth);
   });
 
-  useEffect(() => {}, [open]);
+  // useEffect(() => {}, [open]);
   //monitor screen width break point
   useEffect(() => {
     if (screenSizeChange >= 992) {
