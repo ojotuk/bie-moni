@@ -117,7 +117,8 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 2rem 3rem;
+  padding: 4rem 6rem;
+  padding-top: 9rem;
 }
 
 .aboutUsSection .container .row .containerRight .wrapper .content h2 {

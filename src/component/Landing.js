@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import about1 from "../img/about_1.jpg";
 import overlap1 from "../img/img_overlap.jpg";
 import pattern from "../img/pattern.webp";
-
+import Services from "./Services";
 const Landing = () => {
   return (
     <section className="main">
@@ -57,7 +57,11 @@ const Landing = () => {
           </div>
         </div>
       </section>
-      <section>next</section>
+      <section>
+        <div className="container">
+          <Services />
+        </div>
+      </section>
     </section>
   );
 };
