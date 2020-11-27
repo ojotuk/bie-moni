@@ -76,8 +76,8 @@ main {
   bottom: 0%;
   right: 0%;
   width: 50%;
-  -webkit-transform: translateX(10%);
-          transform: translateX(10%);
+  -webkit-transform: translateX(10%) scaleY(1.1);
+          transform: translateX(10%) scaleY(1.1);
   z-index: 10;
 }
 
@@ -137,6 +137,7 @@ main {
   height: 5rem;
   border-radius: 0.5rem;
   position: relative;
+  margin-bottom: 5rem;
 }
 
 .aboutUsSection .container .row .containerRight .wrapper .content .ctaWrapper .cta {
@@ -203,6 +204,9 @@ main {
   }
   .aboutUsSection .container .row .containerLeft .nonOverlap {
     width: 100%;
+  }
+  .aboutUsSection .container .row .containerRight .wrapper .content {
+    padding: 4rem 2rem 0rem 2rem;
   }
 }
 /*# sourceMappingURL=Landing.module.css.map */
