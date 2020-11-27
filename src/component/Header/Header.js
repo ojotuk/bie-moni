@@ -16,11 +16,7 @@ const Header = () => {
     return setScreenSizeChange(window.innerWidth);
   });
 
-  useEffect(() => {
-    // console.log(navElement.current.classList.value);
-    navElement.current.classList.toggle("drop-open");
-    // console.log(window.screen.width);
-  }, [open]);
+  useEffect(() => {}, [open]);
   //monitor screen width break point
   useEffect(() => {
     if (screenSizeChange >= 992) {
@@ -36,6 +32,7 @@ const Header = () => {
 
   const handleToggle = () => {
     setOpen(!open);
+    navElement.current.classList.toggle("drop-open");
   };
   const expandHandler = (element) => {
     if (element === "companys") {
