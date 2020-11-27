@@ -198,14 +198,15 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 80vh;
 }
 
 .slide_2 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 80vh;
+  padding-bottom: 0;
 }
 
 @media screen and (min-height: 1100px) {
