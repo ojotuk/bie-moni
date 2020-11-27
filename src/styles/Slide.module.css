@@ -1,0 +1,234 @@
+.slideDescription,
+.slideDescription2 {
+  width: 100vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.slideDescription > .content,
+.slideDescription2 > .content {
+  color: white;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slideDescription > .content .wrapper,
+.slideDescription2 > .content .wrapper {
+  width: 60rem;
+  max-width: 90vw;
+  text-align: center;
+  position: relative;
+}
+
+.slideDescription > .content .wrapper h2,
+.slideDescription2 > .content .wrapper h2 {
+  font-size: 5rem;
+  font-weight: 900;
+  color: #f7f7f7;
+  text-transform: capitalize;
+  letter-spacing: 0.3rem;
+  font-family: "Open Sans", sans-serif;
+  outline: 1px;
+  line-height: 6rem;
+}
+
+.slideDescription > .content .wrapper p,
+.slideDescription2 > .content .wrapper p {
+  font-size: 1.8rem;
+  margin: 2rem 0;
+}
+
+.slideDescription > .content .wrapper .ctaContainer,
+.slideDescription2 > .content .wrapper .ctaContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slideDescription > .content .wrapper .ctaContainer .ctaWrapper1,
+.slideDescription2 > .content .wrapper .ctaContainer .ctaWrapper1 {
+  background-color: #fdb900;
+  width: 15rem;
+  height: 5rem;
+  position: relative;
+  border-radius: 0.4rem;
+  margin-right: 2rem;
+}
+
+.slideDescription > .content .wrapper .ctaContainer .ctaWrapper1 .aboutUsBtn,
+.slideDescription2 > .content .wrapper .ctaContainer .ctaWrapper1 .aboutUsBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10;
+  color: white;
+  text-decoration: none;
+  font-size: 1.6rem;
+  width: 100%;
+  text-align: center;
+}
+
+.slideDescription > .content .wrapper .ctaContainer .ctaWrapper1 .colorSlide,
+.slideDescription2 > .content .wrapper .ctaContainer .ctaWrapper1 .colorSlide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #0e2b5c;
+  border-radius: 0.4rem;
+}
+
+.slideDescription > .content .wrapper .ctaContainer .ctaWrapper1:hover .colorSlide,
+.slideDescription2 > .content .wrapper .ctaContainer .ctaWrapper1:hover .colorSlide {
+  width: 100%;
+}
+
+.slideDescription > .content .wrapper .ctaContainer .ctaWrapper1:hover .aboutUsBtn,
+.slideDescription2 > .content .wrapper .ctaContainer .ctaWrapper1:hover .aboutUsBtn {
+  color: white;
+}
+
+.slideDescription > .content .wrapper .ctaContainer .ctaWrapper2,
+.slideDescription2 > .content .wrapper .ctaContainer .ctaWrapper2 {
+  background-color: #f7f7f7;
+  width: 15rem;
+  height: 5rem;
+  position: relative;
+  border-radius: 0.4rem;
+}
+
+.slideDescription > .content .wrapper .ctaContainer .ctaWrapper2 .aboutUsBtn,
+.slideDescription2 > .content .wrapper .ctaContainer .ctaWrapper2 .aboutUsBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10;
+  color: #121212;
+  text-decoration: none;
+  font-size: 1.6rem;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+
+.slideDescription > .content .wrapper .ctaContainer .ctaWrapper2 .colorSlide,
+.slideDescription2 > .content .wrapper .ctaContainer .ctaWrapper2 .colorSlide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #0e2b5c;
+  border-radius: 0.4rem;
+}
+
+.slideDescription > .content .wrapper .ctaContainer .ctaWrapper2:hover .colorSlide,
+.slideDescription2 > .content .wrapper .ctaContainer .ctaWrapper2:hover .colorSlide {
+  width: 100%;
+}
+
+.slideDescription > .content .wrapper .ctaContainer .ctaWrapper2:hover .aboutUsBtn,
+.slideDescription2 > .content .wrapper .ctaContainer .ctaWrapper2:hover .aboutUsBtn {
+  color: white;
+}
+
+.slideDescription > .content .wrapper .wrapperBoxTopLeft,
+.slideDescription2 > .content .wrapper .wrapperBoxTopLeft {
+  width: 0rem;
+  height: 0rem;
+  background-color: transparent;
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  border-left: 0.5rem solid white;
+  border-top: 0.5rem solid white;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.slideDescription > .content .wrapper .wrapperBoxBottomRight,
+.slideDescription2 > .content .wrapper .wrapperBoxBottomRight {
+  width: 0rem;
+  height: 0rem;
+  position: absolute;
+  bottom: -10%;
+  right: -10%;
+  border-right: 0.5rem solid white;
+  border-bottom: 0.5rem solid white;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.slide_1 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+}
+
+.slide_2 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+}
+
+@media screen and (min-height: 1100px) {
+  .slide_1,
+  .slide_2 {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .slideDescription > .content .wrapper h2,
+  .slideDescription2 > .content .wrapper h2 {
+    font-size: 3.6rem;
+  }
+  .slideDescription > .content .wrapper p,
+  .slideDescription2 > .content .wrapper p {
+    font-size: 1.5rem;
+  }
+  .slideDescription > .content .wrapper .wrapperBoxTopLeft,
+  .slideDescription > .content .wrapper .wrapperBoxBottomRight,
+  .slideDescription2 > .content .wrapper .wrapperBoxTopLeft,
+  .slideDescription2 > .content .wrapper .wrapperBoxBottomRight {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Slide.module.css.map */

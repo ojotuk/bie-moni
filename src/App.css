@@ -1,50 +1,37 @@
-.App {
+.header-section {
+  position: relative;
+  overflow: visible;
+  z-index: 100 !important;
+}
+.carousel-container {
+  z-index: 10 !important;
+  width: 100%;
+}
+.carousel-container button {
+  outline: none;
+}
+.extra-div {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  overflow: hidden;
   display: flex;
+}
+.extra-div img {
+  width: 100%;
+}
+.main {
   min-height: 100vh;
 }
-.hashes {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("./img/117862.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-  filter: brightness(0.9);
-  overflow: hidden;
-  padding: 2rem 0;
-}
-.typeWritterWrapper {
-  font-size: 3.6rem;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
-}
-.typeWritterWrapper h3:first-child {
-  margin-right: 1rem;
-}
-#active {
-  color: rgb(22, 186, 149);
-}
-.open {
-  height: 40rem;
+#wrapper {
+  width: 90vw !important;
+  /* background-color: red; */
 }
 
-@media screen and (max-width: 900px) {
-  .App {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 599px) {
-  .typeWritterWrapper {
-    font-size: 2rem;
-  }
-}
-@media screen and (max-width: 300px) {
-  .typeWritterWrapper {
-    font-size: 1.8rem;
+@media screen and (max-width: 992px) {
+  .fa-chevron-down {
+    display: none;
   }
 }

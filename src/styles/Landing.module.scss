@@ -1,0 +1,178 @@
+$primary: #9b6d24;
+$primaryBlue: #0e2b5c;
+$primaryYellow: #fdb900;
+$bodyTextColorBlue: #5166a7;
+$bodyTextColorGrey: #888888;
+$mainLinkTextSize: 1.6rem;
+$bodyTextSize: 1.6rem;
+$fontFamliyTitle: "Open Sans", sans-serif;
+$fontFamliyText: "Poppins", sans-serif;
+
+main {
+  min-height: 100vh;
+}
+
+//about us
+.aboutUsSection {
+  width: 100%;
+  min-height: 100vh;
+  // background-color: red;
+  background-image: url("../img/buildingbg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 7rem 0;
+  //pattern
+  .patternDiv {
+    width: 40rem;
+    height: 40rem;
+    top: 0;
+    right: 0;
+    position: absolute;
+    overflow: hidden;
+    img {
+      width: 100%;
+      position: absolute;
+      right: -20rem;
+      top: -20rem;
+      transform: rotate(-45deg);
+    }
+  } //pattern end
+  //container
+  .container {
+    // height: 90vh;
+    min-height: fit-content;
+
+    .row {
+      // height: 50rem;
+      .containerLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // background-color: red;
+        padding: 0;
+        position: relative;
+        height: 100%;
+        .nonOverlap {
+          width: 90%;
+          align-self: flex-end;
+        }
+        h2 {
+          font-size: 8rem;
+          color: #f1f1f1;
+          text-shadow: 0.1px 0.1px 4px rgba($color: #000000, $alpha: 0.3);
+          font-weight: 900;
+          text-transform: uppercase;
+          text-decoration: none solid rgb(242, 242, 242);
+          text-align: left;
+          text-indent: 0px;
+          z-index: 50;
+        }
+        .overlap1 {
+          position: absolute;
+          bottom: 0%;
+          right: 0%;
+          width: 50%;
+          transform: translateX(10%);
+          z-index: 10;
+        }
+      } //container left ends
+      .containerRight {
+        // background-color: blue;
+        height: 50rem;
+        min-height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        .wrapper {
+          // background-color: blue;
+          height: 80%;
+          border: 2rem solid #f2f2f2;
+          .content {
+            background-color: white;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2rem 3rem;
+            h2 {
+              font-size: 2.4rem;
+            }
+            p {
+              font-size: 1.4rem;
+              margin: 3rem 0;
+              color: $bodyTextColorGrey;
+            }
+            .ctaWrapper {
+              background-color: $primaryBlue;
+              width: 15rem;
+              height: 5rem;
+              border-radius: 0.5rem;
+              position: relative;
+              .cta {
+                position: absolute;
+                top: 25%;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                a {
+                  width: 100%;
+                  height: 100%;
+                  display: flex;
+                  justify-content: center;
+                  font-size: $mainLinkTextSize;
+                  text-decoration: none;
+                  color: white;
+                  letter-spacing: 0.1rem;
+                }
+              } //cta ends
+              span {
+                position: absolute;
+                width: 0%;
+                height: 100%;
+                background-color: transparent;
+                top: 0;
+                left: 0;
+                pointer-events: none;
+                z-index: 1;
+                transition: 0.3s;
+                border-radius: 0.5rem;
+              }
+              //hover ctaWrapper
+              &:hover {
+                span {
+                  background-color: $primaryYellow;
+                  width: 100%;
+                }
+              }
+            }
+          } //content ends
+        } //wrapper ends
+      } //containerRight ends
+    } //row ends
+  } //container ends
+}
+
+@media screen and (max-width: 590px) {
+  .aboutUsSection {
+    .container {
+      .row {
+        .containerLeft {
+          flex-direction: column-reverse;
+          align-items: center;
+          .overlap1 {
+            display: none;
+          }
+          .nonOverlap {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

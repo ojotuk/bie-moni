@@ -1,0 +1,336 @@
+$primaryBlue: #0e2b5c;
+$primaryYellow: #fdb900;
+$bodyTextColor: #5166a7;
+$mainLinkTextSize: 1.6rem;
+$bodyTextSize: 1.6rem;
+
+.header {
+  //   background-color: red;
+  .nav {
+    //   top
+    .topBar {
+      width: 100%;
+      height: 4rem;
+      // background-color: green;
+      color: white;
+      border-bottom: 0.1rem solid #eeeeee;
+      .topWrapper {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        .ulTopLeft {
+          display: flex;
+          align-items: center;
+          // background-color: red;
+          height: 4rem;
+          margin: 0;
+          .ulTopLeftItem {
+            padding: 0 2rem;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            a {
+              text-decoration: none;
+              font-size: 1.6rem;
+              color: white;
+            }
+            i {
+              color: $primaryYellow;
+              margin-right: 1.5rem;
+              font-size: 1.6rem;
+            }
+            &:nth-child(2) {
+              border-left: 0.1rem solid #eeeeee;
+              border-right: 0.1rem solid #eeeeee;
+            }
+            &:hover {
+              a {
+                color: $primaryYellow;
+              }
+            }
+          }
+        } //left end
+        .ulTopRight {
+          display: flex;
+          align-items: center;
+          // background-color: red;
+          height: 4rem;
+          margin: 0;
+          .ulTopRightItem {
+            padding: 0.5 0.5rem;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            a {
+              text-decoration: none;
+              font-size: 1.6rem;
+              color: white;
+            }
+            i {
+              color: inherit;
+              margin-right: 1.5rem;
+              font-size: 1.6rem;
+              transition: 0.3s;
+            }
+            &:hover {
+              i {
+                color: $primaryYellow;
+              }
+            }
+          }
+        } //top right ends
+      }
+    }
+    // bottom
+    .bottomBar {
+      background-color: transparent;
+      height: 10rem;
+      width: 100%;
+      .wrapper {
+        display: flex;
+        align-items: center;
+        // justify-content: space-between;
+        height: 100%;
+        position: relative;
+        // background-color: #fdb900;
+        // width: 100%;
+      }
+      .brand {
+        margin-right: 10rem;
+        img {
+          width: 100%;
+        }
+      }
+      .navToggler {
+        display: none;
+        font-size: 3rem;
+        color: white;
+      }
+      .large-screen-navigation {
+        flex: 1;
+        height: 7rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .mainNavLink {
+          font-size: 1.8rem;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          margin-right: 2rem;
+          position: relative;
+          > a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: 0.04rem;
+            i {
+              margin-left: 1rem;
+              font-size: 1.2rem;
+            }
+            &::after {
+              content: "";
+              display: block;
+              position: absolute;
+              height: 0.3rem;
+              width: 0%;
+              bottom: 0;
+              transition: 0.5s;
+            }
+          }
+          &:hover a {
+            color: $primaryYellow;
+            &::after {
+              background-color: $primaryYellow;
+              width: 100%;
+            }
+          }
+          //dropdown
+          .dropDown {
+            // background-color: green !important;
+            position: absolute;
+            top: 6rem;
+            // display: none
+            opacity: 0;
+            transition: 0.5s;
+            width: 20rem;
+            box-shadow: 0.5px 0.5px 10px rgba($color: #000000, $alpha: 0.1);
+            z-index: -10 !important;
+            height: 0;
+            overflow: hidden;
+            a {
+              color: #121212;
+            }
+          } // dropdown ends
+          // on hover navMainLink
+          &:hover {
+            .dropDown {
+              opacity: 1;
+              display: flex;
+              flex-direction: column;
+              top: 7rem;
+              height: fit-content;
+              padding: 3rem 1rem;
+              background-color: #ffffff;
+              .dropDownItem {
+                margin-bottom: 1.5rem;
+                // background-color: blue !important;
+                width: 100%;
+                position: relative;
+                a {
+                  color: $bodyTextColor;
+                  text-decoration: none;
+                  margin-left: 1rem;
+                  padding-right: 1.5rem;
+                  width: 100%;
+                  font-size: 1.6rem;
+                  font-weight: 400;
+                  letter-spacing: 0.04rem;
+                  &:hover {
+                    color: $primaryYellow;
+                  }
+                }
+                i {
+                  position: absolute;
+                  left: -5rem;
+                  transition: 0.3s;
+                  height: 100%;
+                  display: flex;
+                  align-items: center;
+                  font-size: 1.4rem;
+                  color: $primaryYellow;
+                }
+                &:hover {
+                  i {
+                    left: -0.5rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .mobile-navigation {
+        position: absolute;
+        top: 7.5rem;
+        left: 0;
+        max-height: 0;
+        overflow: hidden;
+        background-color: rgba($color: #000000, $alpha: 0.9);
+        transition: max-height 0.5s, opacity 0s;
+        opacity: 0;
+      }
+      .drop-open {
+        max-height: calc(200vh - 7.5rem);
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+        opacity: 1;
+        .mainNavLink {
+          font-size: 1.6rem;
+          height: 2.5rem;
+          width: 100%;
+          overflow: hidden;
+          padding: 2rem 0;
+          position: relative;
+          cursor: pointer;
+          transition: all 0.3s;
+          > a {
+            // background-color: yellow;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            i {
+              position: absolute;
+              right: 3rem;
+            }
+          }
+        } //default nav link
+        .expand-companys {
+          //expand nav
+          transition: all 0.3s;
+          height: 35rem;
+          max-height: fit-content;
+        }
+        .expand-services {
+          //expand nav
+          transition: all 0.3s;
+          height: 17rem;
+          max-height: fit-content;
+        }
+        .dropDown {
+          // background-color: #fdb900;
+          padding: 1.5rem 1rem;
+          .dropDownItem {
+            // background-color: red;
+            padding: 1rem 0;
+            border-bottom: 0.1rem solid #eeeeee;
+            margin-bottom: 0.5rem;
+            a {
+              color: #ffffff;
+              padding-left: 1.5rem;
+            }
+          }
+        } //drop down ends
+      } //drop open ends
+    } //   left bottom nav ends
+  }
+}
+
+// mMobile responsiveness
+//breaking points
+//1024px
+@media screen and (max-width: 1024px) {
+  .header .nav .bottomBar {
+    .brand {
+      margin-right: 3rem;
+    }
+  }
+}
+//1000px
+@media screen and (max-width: 1000px) {
+  .header .nav .bottomBar {
+    .wrapper {
+      .brand {
+        margin-right: 3rem;
+      }
+    }
+  }
+  .header .nav .bottomBar {
+    .wrapper {
+      .ulLeft {
+        // display: none;
+      }
+    }
+  }
+}
+//992px
+@media screen and (max-width: 992px) {
+  .header .nav .topBar {
+    display: none;
+  }
+  .header .nav .bottomBar {
+    .wrapper {
+      .brand {
+        margin-right: 3rem;
+      }
+    }
+  }
+  .header .nav .bottomBar {
+    .wrapper {
+      justify-content: space-between;
+      position: relative;
+      .navToggler {
+        display: block;
+      }
+      .drop-open {
+        //check app.css
+      }
+    }
+  }
+}
