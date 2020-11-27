@@ -4,13 +4,12 @@ main {
 
 .aboutUsSection {
   width: 100%;
-  min-height: 100vh;
   background-image: url("../img/buildingbg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  padding: 7rem 0;
+  padding: 17rem 0 10rem 0;
 }
 
 .aboutUsSection .patternDiv {
