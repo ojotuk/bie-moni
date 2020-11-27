@@ -165,6 +165,10 @@ main {
         .containerLeft {
           flex-direction: column-reverse;
           align-items: center;
+          h2 {
+            font-size: 3.6rem;
+            margin-bottom: 2rem;
+          }
           .overlap1 {
             display: none;
           }

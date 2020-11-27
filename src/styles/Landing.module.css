@@ -193,6 +193,10 @@ main {
         -ms-flex-align: center;
             align-items: center;
   }
+  .aboutUsSection .container .row .containerLeft h2 {
+    font-size: 3.6rem;
+    margin-bottom: 2rem;
+  }
   .aboutUsSection .container .row .containerLeft .overlap1 {
     display: none;
   }
