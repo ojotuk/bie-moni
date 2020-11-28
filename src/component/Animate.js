@@ -61,3 +61,11 @@ export const bottomRightBox = (elem) => {
     duration: 2,
   });
 };
+export const mouseHover = (elem) => {
+  gsap.from(elem, {
+    yPercent: -100,
+    opacity: 0,
+    duration: 1,
+    ease: "bounce.out",
+  });
+};

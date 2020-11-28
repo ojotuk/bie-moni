@@ -160,6 +160,53 @@ main {
   } //container ends
 }
 
+///services
+.servicesSection {
+  padding: 4rem 0;
+  .caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+    h4 {
+      font-size: 1.6rem;
+      color: $primaryYellow;
+      font-weight: 600;
+      letter-spacing: 0.09rem;
+      text-align: center;
+    }
+    h3 {
+      font-size: 2.4rem;
+      margin: 1.5rem;
+      color: rgba($color: $primaryBlue, $alpha: 0.4);
+      font-weight: 900;
+      letter-spacing: 0.1rem;
+      text-align: center;
+    }
+    div {
+      font-size: 3.6rem;
+      &::after {
+        content: "";
+        height: 0.3rem;
+        background-color: #000000;
+        width: 25%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 2rem;
+        min-width: 3.5rem;
+      }
+    }
+    span {
+      height: 0.3rem;
+      background-color: #000000;
+      width: 2.5%;
+      display: block;
+      margin-top: 1rem;
+      min-width: 2rem;
+    }
+  }
+}
+
 @media screen and (max-width: 590px) {
   .aboutUsSection {
     .container {

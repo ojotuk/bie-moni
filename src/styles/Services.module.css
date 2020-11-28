@@ -1,0 +1,96 @@
+.wrapperServices {
+  gap: 2rem;
+}
+
+.wrapperServices .cardWrapper {
+  margin: 0 1rem;
+}
+
+.wrapperServices .cardWrapper .cardUp {
+  background-color: red !important;
+  position: relative;
+  height: 27rem;
+}
+
+.wrapperServices .cardWrapper .cardUp .cardUpDrop {
+  padding: 2rem 1.5rem;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+.wrapperServices .cardWrapper .cardUp .cardUpDrop p {
+  font-size: 1.6rem;
+}
+
+.wrapperServices .cardWrapper .cardUp .cardUpDrop a {
+  color: #fdb900;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.wrapperServices .cardWrapper .cardUp .cardUpDrop a i {
+  margin-left: 1.5rem;
+}
+
+.wrapperServices .cardWrapper .cardUp .img {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapperServices .cardWrapper .ctaDiv {
+  background-color: #0e2b5c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  height: 5rem;
+}
+
+.wrapperServices .cardWrapper .ctaDiv .iconDiv {
+  background-color: white;
+  width: 5rem;
+  height: 100%;
+  margin-right: 2rem;
+}
+
+.wrapperServices .cardWrapper .ctaDiv .iconDiv .icon {
+  width: 100%;
+  height: 100%;
+  background-color: #9b6d24;
+}
+
+.wrapperServices .cardWrapper .ctaDiv p {
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+  font-size: 1.6rem;
+}
+
+.wrapperServices .logo {
+  width: 3rem;
+}
+/*# sourceMappingURL=Services.module.css.map */

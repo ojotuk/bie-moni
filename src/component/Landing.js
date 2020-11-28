@@ -57,8 +57,17 @@ const Landing = () => {
           </div>
         </div>
       </section>
-      <section>
+      {/* services section */}
+      <section className={styles.servicesSection}>
         <div className="container">
+          <div className={styles.caption}>
+            <h4>Our Services</h4>
+            <h3>
+              High Quality Construction Solutions For Residentials & Industries!
+            </h3>
+            <div>Whats Our Offers</div>
+            <span></span>
+          </div>
           <Services />
         </div>
       </section>

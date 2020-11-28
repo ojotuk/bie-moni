@@ -1,0 +1,88 @@
+$primary: #9b6d24;
+$primaryBlue: #0e2b5c;
+$primaryYellow: #fdb900;
+$bodyTextColorBlue: #5166a7;
+$bodyTextColorGrey: #888888;
+$mainLinkTextSize: 1.6rem;
+$bodyTextSize: 1.6rem;
+$fontFamliyTitle: "Open Sans", sans-serif;
+$fontFamliyText: "Poppins", sans-serif;
+
+///services
+.wrapperServices {
+  // display: grid;
+  // grid-template-columns: repeat(2, 1fr);
+  // grid-auto-rows: auto;
+  gap: 2rem;
+  // width: 100%;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: center;
+
+  .cardWrapper {
+    // height: 9rem;
+    margin: 0 1rem;
+    .cardUp {
+      background-color: red !important;
+      position: relative;
+      height: 27rem;
+      .cardUpDrop {
+        padding: 2rem 1.5rem;
+        position: absolute;
+        top: 0;
+        background-color: rgba($color: #000000, $alpha: 0.9);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        // align-items: center;
+        p {
+          font-size: $bodyTextSize;
+        }
+        a {
+          color: $primaryYellow;
+          text-decoration: none;
+          font-size: 1.4rem;
+          i {
+            margin-left: 1.5rem;
+          }
+        }
+      }
+      .img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+      }
+    }
+    .ctaDiv {
+      background-color: $primaryBlue;
+      display: flex;
+      align-items: center;
+      color: white;
+      height: 5rem;
+      .iconDiv {
+        background-color: white;
+        width: 5rem;
+        height: 100%;
+        margin-right: 2rem;
+        .icon {
+          width: 100%;
+          height: 100%;
+          background-color: $primary;
+        }
+      }
+      p {
+        height: 100%;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  .logo {
+    width: 3rem;
+  }
+}
