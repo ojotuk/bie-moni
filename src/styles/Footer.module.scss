@@ -55,6 +55,7 @@ $fontFamliyText: "Poppins", sans-serif;
             background-color: transparent;
             padding-left: 1rem;
             font-size: 1.6rem;
+            width: 100%;
             &:valid {
               //if input field is valid
               + .ctaWrapper {
