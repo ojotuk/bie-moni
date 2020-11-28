@@ -70,7 +70,7 @@ const descriptionSlide = [
   },
 ];
 
-const ReadMore = ({ paragraph, state }) => {
+const ReadMore = ({ paragraph }) => {
   let elem = useRef(null);
   useEffect(() => {
     mouseHover(elem);
@@ -128,7 +128,7 @@ const Hero = (props) => {
               </div>
               <div className={styles.ctaDiv}>
                 <div className={styles.iconDiv}>
-                  <img src={slide.icon} className={styles.icon} />
+                  <img src={slide.icon} className={styles.icon} alt="" />
                 </div>
                 <p className={styles.cardDownText}>{slide.type}</p>
               </div>
