@@ -7,6 +7,7 @@ import about1 from "../img/about_1.jpg";
 import overlap1 from "../img/img_overlap.jpg";
 import pattern from "../img/pattern.webp";
 import Services from "./Services";
+import Footer from "./Footer";
 const Landing = () => {
   return (
     <section className="main">
@@ -63,13 +64,19 @@ const Landing = () => {
           <div className={styles.caption}>
             <h4>Our Services</h4>
             <h3>
-              High Quality Construction Solutions For Residentials & Industries!
+              High Quality Electrical and Civil Construction Solutions For
+              Residentials & Industries!
             </h3>
             <div>Whats Our Offers</div>
             <span></span>
           </div>
           <Services />
         </div>
+      </section>
+      {/* service section ends */}
+      {/* FOOTER */}
+      <section className={styles.footerSection}>
+        <Footer />
       </section>
     </section>
   );

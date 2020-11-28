@@ -34,7 +34,7 @@ const responsive = {
 const descriptionSlide = [
   {
     paragraph:
-      "Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus.",
+      "sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus.",
     link: "/",
     name: styles.slide_1,
     caption: "Bigger,Better, Faster & Easier",
@@ -42,7 +42,7 @@ const descriptionSlide = [
   },
   {
     paragraph:
-      "Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus.",
+      "sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus.",
     link: "/",
     name: styles.slide_2,
     caption: "Project Management & Industrial Solution",

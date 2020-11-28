@@ -186,7 +186,8 @@ main {
 }
 
 .servicesSection {
-  padding: 4rem 0;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
   background-image: url("../img/transformerbg.jpg");
   position: relative;
 }
@@ -237,6 +238,7 @@ main {
 
 .servicesSection .caption div {
   font-size: 3.6rem;
+  text-align: center;
 }
 
 .servicesSection .caption div::after {
@@ -257,6 +259,10 @@ main {
   display: block;
   margin-top: 1rem;
   min-width: 2rem;
+}
+
+.footerSection {
+  background-color: #191514;
 }
 
 @media screen and (max-width: 590px) {

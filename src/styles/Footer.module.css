@@ -1,0 +1,37 @@
+.footerMain {
+  color: white;
+}
+
+.footerMain .container {
+  padding: 12rem 0;
+}
+
+.footerMain .copyright {
+  height: 5rem;
+  background-color: #121212;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2rem;
+  font-size: 1.6rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footerMain .copyright a {
+  text-decoration: none;
+  margin-left: 1rem;
+  color: white;
+}
+
+.footerMain .copyright a:hover {
+  color: #fdb900;
+}
+/*# sourceMappingURL=Footer.module.css.map */

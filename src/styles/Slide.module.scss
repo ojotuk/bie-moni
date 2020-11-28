@@ -28,10 +28,14 @@ $fontFamliyText: "Poppins", sans-serif;
     align-items: center;
     .wrapper {
       width: 60rem;
+      // height: 40rem;
       max-width: 90vw;
       // background-color: green;
       text-align: center;
       position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
       h2 {
         font-size: 5rem;
         font-weight: 900;

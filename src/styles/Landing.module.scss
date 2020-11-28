@@ -162,10 +162,12 @@ main {
 
 ///services
 .servicesSection {
-  padding: 4rem 0;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
   background-image: url("../img/transformerbg.jpg");
   position: relative;
   &::after {
+    //over lay
     content: "";
     width: 100%;
     height: 100%;
@@ -199,6 +201,7 @@ main {
     }
     div {
       font-size: 3.6rem;
+      text-align: center;
       &::after {
         content: "";
         height: 0.3rem;
@@ -219,6 +222,11 @@ main {
       min-width: 2rem;
     }
   }
+}
+
+//footer
+.footerSection {
+  background-color: #191514;
 }
 
 @media screen and (max-width: 590px) {
