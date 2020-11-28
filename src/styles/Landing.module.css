@@ -265,6 +265,11 @@ main {
   background-color: #191514;
 }
 
+.featured {
+  min-height: 50vh;
+  width: 100%;
+}
+
 @media screen and (max-width: 590px) {
   .aboutUsSection .container .row .containerLeft {
     -webkit-box-orient: vertical;

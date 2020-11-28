@@ -1,12 +1,205 @@
 .footerMain {
   color: white;
+  width: 100%;
 }
 
 .footerMain .container {
   padding: 12rem 0;
 }
 
-.footerMain .copyright {
+.footerMain .container .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footerMain .container .wrapper .subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem 2rem;
+  width: 100%;
+}
+
+.footerMain .container .wrapper .subscribe .content {
+  background-color: #fdb900;
+  padding: 3rem 1rem;
+  width: 100%;
+  position: relative;
+}
+
+.footerMain .container .wrapper .subscribe .content .translateWrapper {
+  position: absolute;
+  top: 0rem;
+  left: 0;
+  width: 100%;
+  padding: 2rem 1rem;
+  padding-bottom: 0;
+  background-color: inherit;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footerMain .container .wrapper .subscribe .content .translateWrapper i {
+  font-size: 4rem;
+}
+
+.footerMain .container .wrapper .subscribe .content .translateWrapper span {
+  font-size: 2.4rem;
+  margin: 2rem 0;
+}
+
+.footerMain .container .wrapper .subscribe .content input {
+  outline: none;
+  height: 4rem;
+  border: 0.1rem solid white;
+  background-color: transparent;
+  padding-left: 1rem;
+  font-size: 1.6rem;
+}
+
+.footerMain .container .wrapper .subscribe .content input:valid + .ctaWrapper .slider {
+  width: 100%;
+}
+
+.footerMain .container .wrapper .subscribe .content input:valid + .ctaWrapper span {
+  color: white;
+}
+
+.footerMain .container .wrapper .subscribe .content .ctaWrapper {
+  background-color: #f7f7f7;
+  width: 15rem;
+  margin-top: 3rem;
+  padding: 1rem 0;
+  cursor: pointer;
+  position: relative;
+  border-radius: 0.5rem;
+}
+
+.footerMain .container .wrapper .subscribe .content .ctaWrapper span {
+  font-size: 1.6rem;
+  width: 100%;
+  text-align: center;
+  width: 15rem !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 5;
+  position: relative;
+  color: #191919;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 0.5rem;
+}
+
+.footerMain .container .wrapper .subscribe .content .ctaWrapper .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #0e2b5c;
+  z-index: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 0.5rem;
+}
+
+.footerMain .container .wrapper .subscribe .content .ctaWrapper:hover .slider {
+  width: 15rem;
+}
+
+.footerMain .container .wrapper .subscribe .content .ctaWrapper:hover span {
+  color: white;
+}
+
+.footerMain .container .wrapper .aboutUs {
+  font-size: 1.4rem;
+}
+
+.footerMain .container .wrapper .aboutUs h6 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.footerMain .container .wrapper .aboutUs h6 span {
+  color: #fdb900;
+  font-size: 2.4rem;
+}
+
+.footerMain .container .wrapper .quickLinks h6 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.footerMain .container .wrapper .quickLinks h6::after {
+  content: "";
+  height: 0.3rem;
+  width: 2.5rem;
+  background-color: #fdb900;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.footerMain .container .wrapper .quickLinks ul li {
+  margin-bottom: 1rem;
+}
+
+.footerMain .container .wrapper .quickLinks a {
+  color: #f3f3f3;
+  font-size: 1.4rem;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footerMain .container .wrapper .quickLinks a:hover {
+  color: #fdb900;
+}
+
+.footerMain .container .wrapper .address h6 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.footerMain .container .wrapper .address h6::after {
+  content: "";
+  height: 0.3rem;
+  width: 2.5rem;
+  background-color: #fdb900;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.footerMain .container .wrapper .address p {
+  font-size: 1.4rem;
+}
+
+.footerMain .container .wrapper .address p span {
+  color: #fdb900;
+}
+
+.copyright {
   height: 5rem;
   background-color: #121212;
   color: white;
@@ -25,13 +218,26 @@
   transition: 0.3s;
 }
 
-.footerMain .copyright a {
+.copyright a {
   text-decoration: none;
   margin-left: 1rem;
   color: white;
 }
 
-.footerMain .copyright a:hover {
+.copyright a:hover {
   color: #fdb900;
+}
+
+@media screen and (max-width: 992px) {
+  .footerMain .container .wrapper .quickLinks,
+  .footerMain .container .wrapper .address {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footerMain .container .wrapper .aboutUs {
+    margin-top: 3rem;
+  }
 }
 /*# sourceMappingURL=Footer.module.css.map */

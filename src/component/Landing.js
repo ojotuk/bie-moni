@@ -74,6 +74,8 @@ const Landing = () => {
         </div>
       </section>
       {/* service section ends */}
+      {/* INBEtween */}
+      <section className={styles.featured}></section>
       {/* FOOTER */}
       <section className={styles.footerSection}>
         <Footer />

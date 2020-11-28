@@ -9,26 +9,203 @@ $fontFamliyText: "Poppins", sans-serif;
 
 .footerMain {
   color: white;
+  width: 100%;
   .container {
     padding: 12rem 0;
-  }
-  .copyright {
-    height: 5rem;
-    background-color: #121212;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 2rem;
-    font-size: 1.6rem;
-    transition: 0.3s;
-    a {
-      text-decoration: none;
-      margin-left: 1rem;
-      color: white;
-      &:hover {
-        color: $primaryYellow;
+    .wrapper {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      .subscribe {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 2rem;
+        width: 100%;
+        .content {
+          background-color: $primaryYellow;
+          padding: 3rem 1rem;
+          width: 100%;
+          position: relative;
+          .translateWrapper {
+            position: absolute;
+            top: 0rem;
+            left: 0;
+            // height: 15rem;
+            width: 100%;
+            padding: 2rem 1rem;
+            padding-bottom: 0;
+            background-color: inherit;
+            transform: translateY(-100%);
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            // background-color: green;
+            i {
+              font-size: 4rem;
+            }
+            span {
+              font-size: 2.4rem;
+              margin: 2rem 0;
+            }
+          }
+          input {
+            outline: none;
+            height: 4rem;
+            border: 0.1rem solid white;
+            background-color: transparent;
+            padding-left: 1rem;
+            font-size: 1.6rem;
+            &:valid {
+              //if input field is valid
+              + .ctaWrapper {
+                .slider {
+                  width: 100%;
+                }
+                span {
+                  color: white;
+                }
+              }
+            }
+          }
+
+          .ctaWrapper {
+            // height: 3rem;
+            background-color: #f7f7f7;
+            width: 15rem;
+            margin-top: 3rem;
+            padding: 1rem 0;
+            cursor: pointer;
+            position: relative;
+            border-radius: 0.5rem;
+            span {
+              font-size: 1.6rem;
+              width: 100%;
+              text-align: center;
+              width: 15rem !important;
+              display: flex;
+              justify-content: center;
+              z-index: 5;
+              position: relative;
+              color: #191919;
+              transition: 0.3s;
+              border-radius: 0.5rem;
+            }
+            .slider {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 0;
+              height: 100%;
+              background-color: $primaryBlue;
+              z-index: 1;
+              transition: 0.3s;
+              border-radius: 0.5rem;
+            }
+            &:hover {
+              .slider {
+                width: 15rem;
+              }
+              span {
+                color: white;
+              }
+            }
+          }
+        }
+      } //subscribes ends
+      .aboutUs {
+        font-size: 1.4rem;
+        // order: 3;
+        h6 {
+          font-size: 1.8rem;
+          margin-bottom: 2rem;
+          span {
+            color: $primaryYellow;
+            font-size: 2.4rem;
+          }
+        }
       }
+      .quickLinks {
+        // order: 3;
+        h6 {
+          font-size: 1.8rem;
+          margin-bottom: 2rem;
+          &::after {
+            content: "";
+            height: 0.3rem;
+            width: 2.5rem;
+            background-color: $primaryYellow;
+            display: block;
+            margin-top: 0.5rem;
+          }
+        }
+        ul li {
+          margin-bottom: 1rem;
+        }
+        a {
+          color: #f3f3f3;
+          font-size: 1.4rem;
+          text-decoration: none;
+          transition: 0.3s;
+          &:hover {
+            color: $primaryYellow;
+          }
+        }
+      } //links
+      .address {
+        h6 {
+          font-size: 1.8rem;
+          margin-bottom: 2rem;
+          &::after {
+            content: "";
+            height: 0.3rem;
+            width: 2.5rem;
+            background-color: $primaryYellow;
+            display: block;
+            margin-top: 0.5rem;
+          }
+        }
+        p {
+          font-size: 1.4rem;
+          span {
+            color: $primaryYellow;
+          }
+        }
+      }
+    }
+  }
+}
+.copyright {
+  height: 5rem;
+  background-color: #121212;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  font-size: 1.6rem;
+  transition: 0.3s;
+  a {
+    text-decoration: none;
+    margin-left: 1rem;
+    color: white;
+    &:hover {
+      color: $primaryYellow;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footerMain .container .wrapper {
+    .quickLinks,
+    .address {
+      margin-top: 3rem;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .footerMain .container .wrapper {
+    .aboutUs {
+      margin-top: 3rem;
     }
   }
 }
