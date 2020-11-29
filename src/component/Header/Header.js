@@ -16,7 +16,7 @@ const Header = () => {
 
   const scrollPositionHandler = () => {
     // console.log(window.scrollY);
-    if (window.scrollY > window.innerHeight) {
+    if (window.scrollY > window.innerHeight / 2) {
       setFixedNav("fixedBottomClass fixedBottomClassActivated");
       setToggleColor("black");
     } else if (window.scrollY > window.innerHeight / 5) {
