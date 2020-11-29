@@ -31,7 +31,9 @@
 .carousel-container button {
   outline: none;
 }
-
+.black {
+  color: #191919 !important;
+}
 .extra-div {
   position: absolute;
   width: 100%;

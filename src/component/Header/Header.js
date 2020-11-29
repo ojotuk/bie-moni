@@ -8,6 +8,7 @@ const Header = () => {
   const [screenSizeChange, setScreenSizeChange] = useState(window.innerWidth);
   const [expand, setExpand] = useState({ companys: false, services: false });
   const [fixedNav, setFixedNav] = useState(" ");
+  const [toggleColor, setToggleColor] = useState(" ");
 
   let navElement = useRef(null);
   let dropElement1 = useRef(null);
@@ -17,6 +18,7 @@ const Header = () => {
     // console.log(window.scrollY);
     if (window.scrollY > window.innerHeight) {
       setFixedNav("fixedBottomClass fixedBottomClassActivated");
+      setToggleColor("black");
     } else if (window.scrollY > window.innerHeight / 5) {
       // console.log("fixed");
       setFixedNav("fixedBottomClass");
@@ -123,7 +125,7 @@ const Header = () => {
                 <img src={logo} className="logo-dark" alt="logo" />
               </a>
               <span className={"navToggler"} onClick={handleToggle}>
-                <i className="fa fa-bars "></i>
+                <i className={` fa fa-bars ${toggleColor}`}></i>
               </span>
               {/* <span className={styles.navTogglerClose}>
                 <i className="fa fa-times "></i>

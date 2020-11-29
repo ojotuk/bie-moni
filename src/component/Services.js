@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import { mouseHover } from "./Animate";
 import service_1 from "../img/service1.jpg";
 import borehole from "../img/borehole.jpg";
-import service_3 from "../img/services3.jpg";
 //
 import icon_3 from "../img/icon_service_3.png";
 import icon_2 from "../img/icon_service_2.png";
