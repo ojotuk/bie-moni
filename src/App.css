@@ -8,17 +8,30 @@
   overflow: visible;
   z-index: 100 !important;
 }
+/* header section fixed on scroll half inner height */
+.header-section .fixedBottomClass {
+  position: fixed;
+  top: -10rem;
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  transition: top 0.3s;
+}
+.header-section .fixedBottomClassActivated {
+  top: 0rem !important;
+}
+.header-section .fixedBottomClass .large-screen-navigation a {
+  color: #191919 !important;
+}
 .carousel-container {
   z-index: 10 !important;
   width: 100%;
+  overflow-y: clip !important;
+  position: relative !important;
 }
 .carousel-container button {
   outline: none;
 }
-.custom-dot-list-style {
-  position: relative;
-  bottom: -2rem;
-}
+
 .extra-div {
   position: absolute;
   width: 100%;

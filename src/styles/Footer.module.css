@@ -55,6 +55,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border-top: 1rem solid #0e2b5c;
 }
 
 .footerMain .container .wrapper .subscribe .content .translateWrapper i {

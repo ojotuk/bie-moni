@@ -5,13 +5,20 @@ import styles from "../styles/Services.module.css";
 import { Link } from "react-router-dom";
 import { mouseHover } from "./Animate";
 import service_1 from "../img/service1.jpg";
-import service_2 from "../img/services2.jpg";
+import borehole from "../img/borehole.jpg";
 import service_3 from "../img/services3.jpg";
 //
 import icon_3 from "../img/icon_service_3.png";
 import icon_2 from "../img/icon_service_2.png";
 import icon_1 from "../img/icon_service_1.png";
 import icon_4 from "../img/icon_service_4.png";
+import road_construction from "../img/road_construction.jpg";
+import landscaping_design from "../img/landscaping_design.jpg";
+import Structural_Design from "../img/Structural_Design.png";
+import transformer from "../img/transformer.jpg";
+import powerlines from "../img/powerlines.jpg";
+import elect_supplies from "../img/elect_supplies.jpg";
+import welding from "../img/welding.jpg";
 import { useRef } from "react";
 
 const responsive = {
@@ -37,7 +44,7 @@ const descriptionSlide = [
       "Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus.",
     link: "/",
     type: "Road Construction",
-    img: service_1,
+    img: road_construction,
     icon: icon_1,
     id: 1,
   },
@@ -45,8 +52,8 @@ const descriptionSlide = [
     paragraph:
       "Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus.",
     link: "/",
-    type: "Road Construction",
-    img: service_2,
+    type: "Landscape Designs",
+    img: landscaping_design,
     icon: icon_2,
     id: 2,
   },
@@ -54,8 +61,8 @@ const descriptionSlide = [
     paragraph:
       "Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus.",
     link: "/",
-    type: "Road Construction",
-    img: service_1,
+    type: "Structural Works",
+    img: Structural_Design,
     icon: icon_3,
     id: 3,
   },
@@ -63,10 +70,55 @@ const descriptionSlide = [
     paragraph:
       "Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus.",
     link: "/",
-    type: "Road Construction",
-    img: service_3,
+    type: "Building Construction",
+    img: service_1,
     icon: icon_4,
     id: 4,
+  },
+  {
+    paragraph:
+      "Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus.",
+    link: "/",
+    type: "Boreholes & Water Installation",
+    img: borehole,
+    icon: icon_4,
+    id: 5,
+  },
+  {
+    paragraph:
+      "Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus.",
+    link: "/",
+    type: "Transformer Installations",
+    img: transformer,
+    icon: icon_4,
+    id: 6,
+  },
+  {
+    paragraph:
+      "Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus.",
+    link: "/",
+    type: "Power Line Installation",
+    img: powerlines,
+    icon: icon_4,
+    id: 7,
+  },
+  {
+    paragraph:
+      "Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus.",
+    link: "/",
+    type: "Electrical Supplies & Installation",
+    img: elect_supplies,
+    icon: icon_4,
+    id: 8,
+  },
+  {
+    paragraph:
+      "Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus.",
+    link: "/",
+    type: "Welding equipment/materials",
+    img: welding,
+    icon: icon_4,
+    id: 9,
   },
 ];
 
@@ -94,9 +146,9 @@ const Hero = (props) => {
     <>
       <div className={styles.wrapperServices + ""}>
         <Carousel
-          swipeable={false}
+          swipeable={true}
           draggable={false}
-          showDots={true}
+          showDots={false}
           responsive={responsive}
           ssr={false} // means to render carousel on server-side.
           infinite={true}

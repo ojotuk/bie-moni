@@ -39,6 +39,7 @@ $fontFamliyText: "Poppins", sans-serif;
             z-index: 10;
             display: flex;
             flex-direction: column;
+            border-top: 1rem solid $primaryBlue;
             // background-color: green;
             i {
               font-size: 4rem;

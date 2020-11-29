@@ -7,9 +7,24 @@ const Header = () => {
   const [open, setOpen] = useState(true);
   const [screenSizeChange, setScreenSizeChange] = useState(window.innerWidth);
   const [expand, setExpand] = useState({ companys: false, services: false });
+  const [fixedNav, setFixedNav] = useState(" ");
+
   let navElement = useRef(null);
   let dropElement1 = useRef(null);
   let dropElement2 = useRef(null);
+
+  const scrollPositionHandler = () => {
+    // console.log(window.scrollY);
+    if (window.scrollY > window.innerHeight) {
+      setFixedNav("fixedBottomClass fixedBottomClassActivated");
+    } else if (window.scrollY > window.innerHeight / 5) {
+      // console.log("fixed");
+      setFixedNav("fixedBottomClass");
+    } else {
+      setFixedNav(" ");
+    }
+  };
+  window.addEventListener("scroll", scrollPositionHandler);
 
   window.addEventListener("resize", (e) => {
     // console.log("resize", window.innerWidth);
@@ -56,7 +71,7 @@ const Header = () => {
                 <ul className={"ulTopLeft"}>
                   <li className={"ulTopLeftItem"}>
                     <i className="fa fa-phone"></i>
-                    <a href="tel:+2345958509">+2345678987</a>
+                    <a href="tel:+2345958509">+2348033100730</a>
                   </li>
                   <li className={"ulTopLeftItem"}>
                     <i className="fa fa-envelope"></i>
@@ -102,7 +117,7 @@ const Header = () => {
             </div>
           </div>
           {/* nav bottom */}
-          <div className={"bottomBar"}>
+          <div className={`bottomBar ${fixedNav}`}>
             <div className={"wrapper  container"}>
               <a className={"brand navbar-brand"} href="/">
                 <img src={logo} className="logo-dark" alt="logo" />

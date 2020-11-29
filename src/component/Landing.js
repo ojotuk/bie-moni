@@ -38,17 +38,23 @@ const Landing = () => {
             <div className={styles.containerRight + " col-lg-6 right"}>
               <div className={styles.wrapper}>
                 <div className={styles.content}>
-                  <h2>Any Complexity For Any Catt</h2>
+                  <h2>
+                    <span>Bie-Moni</span> Nigeria Limited
+                  </h2>
                   <p>
                     Our company has many years experience and specializes in
-                    manufacturing, salling, serviceing and repairing cardan
-                    shafts (cardans) for various vehicles, technological
-                    equipment, tractor, special machinery and agricultural
-                    machinery of verious domestic and foreign manufacturers.
+                    satisfying client requirements for responsive quality civil
+                    engineering works, electrifications and provision of general
+                    contracting within the oil and gas industry and
+                    public/private sector of the economy.
+                  </p>
+                  <p className="mt-0">
+                    With state of the art equipment and support facilities,
+                    we've executed several project across the country.
                   </p>
                   <div className={styles.ctaWrapper}>
                     <div className={styles.cta}>
-                      <Link to="#">About Us</Link>
+                      <Link to="#">Learn More</Link>
                     </div>
                     <span></span>
                   </div>
@@ -74,6 +80,17 @@ const Landing = () => {
         </div>
       </section>
       {/* service section ends */}
+      <section className={styles.intersection}>
+        <div className={styles.container + " container"}>
+          <span>LOOKING AN ADEQUATE SOLUTION FOR YOUR PROJECT?</span>
+          <div className={styles.ctaWrapper}>
+            <div>
+              Reach Out <i className="fa fa-comment ml-2"></i>
+            </div>
+            <span></span>
+          </div>
+        </div>
+      </section>
       {/* INBEtween */}
       <section className={styles.featured}></section>
       {/* FOOTER */}
