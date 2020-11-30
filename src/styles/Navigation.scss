@@ -99,14 +99,16 @@ $bodyTextSize: 1.6rem;
         // width: 100%;
       }
       .brand {
-        width: 17rem;
+        width: 20rem;
         // background-color: #fdb900;
         display: flex;
         align-items: center;
+        justify-content: center;
         height: 100%;
         img {
           width: 50%;
           border-radius: 50%;
+          align-self: center;
         }
         .brand-name-wrapper {
           display: flex;
@@ -114,6 +116,7 @@ $bodyTextSize: 1.6rem;
           justify-content: center;
           margin-left: 0.5rem;
           height: 100%;
+          transform: translateY(5%);
           & span:first-child {
             font-size: 3rem;
             line-height: 2.5rem;
@@ -122,7 +125,7 @@ $bodyTextSize: 1.6rem;
           }
           & span:last-child {
             font-size: 1.6rem;
-            color: $primaryBlue;
+            color: white;
             font-weight: 700;
             letter-spacing: 0.1rem;
           }
