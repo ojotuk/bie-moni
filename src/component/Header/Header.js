@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
-import MobileNavigation from "../MobileNavigation";
 import logo from "../../img/bnml.PNG";
 import "../../styles/Navigation.css";
 
