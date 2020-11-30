@@ -44,7 +44,7 @@ const descriptionSlide = [
     paragraph: "We Provide Experience and High Level worksolution for you.",
     link: "/",
     name: styles.slide_2,
-    caption: "Experts & Professionals",
+    caption: "Bie-Moni Nig Ltd",
     id: 2,
   },
 ];
