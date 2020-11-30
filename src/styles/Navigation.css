@@ -315,7 +315,7 @@
   left: 0;
   max-height: 0;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #1b2a6d;
   -webkit-transition: max-height 0.5s, opacity 0s;
   transition: max-height 0.5s, opacity 0s;
   opacity: 0;

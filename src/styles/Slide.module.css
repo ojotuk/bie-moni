@@ -23,6 +23,8 @@
 .slideDescription2 > .content {
   color: white;
   padding: 0;
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
