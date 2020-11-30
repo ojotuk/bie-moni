@@ -19,6 +19,7 @@ import powerlines from "../img/powerlines.jpg";
 import elect_supplies from "../img/elect_supplies.jpg";
 import welding from "../img/welding.jpg";
 import { useRef } from "react";
+import { Fade } from "react-reveal";
 
 const responsive = {
   desktop: {
@@ -49,7 +50,7 @@ const descriptionSlide = [
   },
   {
     paragraph:
-      "Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus.",
+      "Our design professionals are equipped to help determine the design that work best for our customers within the colours.",
     link: "/",
     type: "Landscape Designs",
     img: landscaping_design,

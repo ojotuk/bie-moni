@@ -120,6 +120,7 @@ $bodyTextSize: 1.6rem;
           align-items: center;
           margin-right: 2rem;
           position: relative;
+          color: white;
           > a {
             color: white;
             text-decoration: none;
@@ -140,7 +141,8 @@ $bodyTextSize: 1.6rem;
               transition: 0.5s;
             }
           }
-          &:hover a {
+          &:hover a,
+          span {
             color: $primaryYellow;
             &::after {
               background-color: $primaryYellow;
@@ -237,13 +239,6 @@ $bodyTextSize: 1.6rem;
       }
     }
   }
-  .header .nav .bottomBar {
-    .wrapper {
-      .ulLeft {
-        // display: none;
-      }
-    }
-  }
 }
 //992px
 @media screen and (max-width: 992px) {
@@ -264,9 +259,9 @@ $bodyTextSize: 1.6rem;
       .navToggler {
         display: block;
       }
-      .drop-open {
-        //check app.css
-      }
+      //.drop-open
+      //check app.css
+
       .ulLeft {
         flex: 1;
         position: fixed;

@@ -81,6 +81,20 @@ main {
   z-index: 10;
 }
 
+.aboutUsSection .container .row .containerLeft .powerlines {
+  width: 10%;
+  position: absolute;
+  bottom: 10rem;
+  left: 10rem;
+}
+
+.aboutUsSection .container .row .containerLeft .road {
+  width: 20%;
+  position: absolute;
+  bottom: 15rem;
+  left: 3rem;
+}
+
 .aboutUsSection .container .row .containerRight {
   height: 50rem;
   min-height: -webkit-fit-content;
@@ -185,6 +199,91 @@ main {
   width: 100%;
 }
 
+.coresSection {
+  width: 100%;
+  background-image: url("../img/coresbg.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 7rem 0;
+  background-attachment: fixed;
+}
+
+.coresSection .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.coresSection .container h4 {
+  color: #fdb900;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  width: 60rem;
+  max-width: 90vw;
+  text-align: center;
+}
+
+.coresSection .container h3 {
+  color: #f7f7f7;
+  font-size: 3.6rem;
+  margin: 1.5rem 0;
+  margin-bottom: 4rem;
+  font-weight: 700;
+  width: 60rem;
+  max-width: 90vw;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+
+.coresSection .container h3 span {
+  color: #fdb900;
+}
+
+.coresSection .container .valueWrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.coresSection .container .valueWrapper div {
+  width: 18rem;
+  height: 7rem;
+  background-color: transparent;
+  font-size: 2.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  border: 0.1rem solid white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.coresSection .container .valueWrapper div:hover {
+  background-color: #fdb900;
+}
+
 .servicesSection {
   padding-top: 4rem;
   padding-bottom: 8rem;
@@ -261,12 +360,38 @@ main {
   min-width: 2rem;
 }
 
+.servicesSection .listDi {
+  z-index: 10;
+  position: relative;
+  font-size: 1.6rem;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.servicesSection .listDi ul {
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.servicesSection .listDi ul li {
+  padding: 1rem;
+}
+
+.servicesSection .listDi ul li i {
+  background-color: #fdb900;
+  border-radius: 50%;
+  color: white;
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+
 .intersection {
   width: 100%;
-  height: 10rem;
   background-image: url("../img/enquiry.jpg");
   background-position: center;
   background-size: cover;
+  padding: 3rem 0;
 }
 
 .intersection .container {
@@ -280,6 +405,10 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.intersection .container span {
+  text-align: center;
 }
 
 .intersection .container .ctaWrapper {
@@ -358,6 +487,36 @@ main {
   }
   .aboutUsSection .container .row .containerRight .wrapper .content {
     padding: 4rem 2rem 0rem 2rem;
+  }
+  .intersection .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .intersection .container span {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .coresSection .container .valueWrapper div:last-child {
+    margin: 1rem auto;
+  }
+}
+
+@media screen and (max-width: 389px) {
+  .coresSection .container h3 {
+    font-size: 2.4rem;
+  }
+  .coresSection .container .valueWrapper div {
+    margin: 1rem auto;
   }
 }
 /*# sourceMappingURL=Landing.module.css.map */

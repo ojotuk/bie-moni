@@ -82,44 +82,36 @@ const Header = () => {
                   </li>
                   <li className={"ulTopLeftItem"}>
                     <i className="fa fa-clock-o"></i>
-                    <a href="/#">Open Hours 09:00 am - 06:00 pm</a>
+                    <a href="/">Open Hours 09:00 am - 06:00 pm</a>
                   </li>
                 </ul>
               </div>
               <div className={"topRight"}>
                 <ul className={"ulTopRight"}>
                   <li className={"ulTopRightItem"}>
-                    <a
-                      href="https://www.facebook.com/BieMoniNg"
-                      rel="noreferrer"
-                      target="_blank"
-                    >
+                    <a href="/">
                       <i className="fa fa-facebook"></i>
                     </a>
                   </li>
                   <li className={"ulTopLeftItem"}></li>
                   <li className={"ulTopRightItem"}>
-                    <a href="/#">
+                    <a href="/">
                       <i className="fa fa-twitter"></i>
                     </a>
                   </li>
                   <li className={"ulTopRightItem"}>
-                    <a href="/#">
+                    <a href="/">
                       <i className="fa fa-google-plus"></i>
                     </a>
                   </li>
                   <li className={"ulTopRightItem"}>
-                    <a href="/#">
+                    <a href="/">
                       <i className="fa fa-linkedin"></i>
                     </a>
                   </li>
                   <li className={"ulTopRightItem"}>
-                    <a
-                      href="https://wa.me/2348033100730"
-                      rel="noreferrer"
-                      target="_blank"
-                    >
-                      <i className="fa fa-whatsapp"></i>
+                    <a href="/">
+                      <i className="fa fa-pinterest"></i>
                     </a>
                   </li>
                 </ul>
@@ -151,7 +143,7 @@ const Header = () => {
                   ref={dropElement1}
                   onClick={() => expandHandler("companys")}
                 >
-                  <NavLink to="/#">
+                  <a href="/">
                     Companys<i className="fa fa-chevron-down"></i>
                     <i
                       className={
@@ -160,16 +152,16 @@ const Header = () => {
                           : "fa fa-plus d-lg-none"
                       }
                     ></i>
-                  </NavLink>
+                  </a>
                   {/* dropdown */}
                   <ul className={"dropDown"}>
                     <li className={"dropDownItem"}>
                       <i className="fa fa-chevron-right"></i>
-                      <a href="/#about">About</a>
+                      <NavLink to="/#about">About</NavLink>
                     </li>
                     <li className={"dropDownItem"}>
                       <i className="fa fa-chevron-right"></i>
-                      <a href="/#cores">Core values</a>
+                      <NavLink to="#">Core values</NavLink>
                     </li>
                     <li className={"dropDownItem"}>
                       <i className="fa fa-chevron-right"></i>
@@ -181,7 +173,7 @@ const Header = () => {
                     </li>
                     <li className={"dropDownItem"}>
                       <i className="fa fa-chevron-right"></i>
-                      <NavLink to="#">Help &amp; FAQ</NavLink>
+                      <NavLink to="#">Help &amps; FAQ</NavLink>
                     </li>
                     <li className={"dropDownItem"}>
                       <i className="fa fa-chevron-right"></i>
@@ -194,7 +186,7 @@ const Header = () => {
                   ref={dropElement2}
                   onClick={() => expandHandler("services")}
                 >
-                  <NavLink to="/#">
+                  <a href="/">
                     Services<i className="fa fa-chevron-down"></i>
                     <i
                       className={
@@ -203,16 +195,16 @@ const Header = () => {
                           : "fa fa-plus d-lg-none"
                       }
                     ></i>
-                  </NavLink>
+                  </a>
                   {/* dropdown */}
                   <ul className={"dropDown"}>
                     <li className={"dropDownItem"}>
                       <i className="fa fa-chevron-right"></i>
-                      <a href="/#services">Electrification</a>
+                      <NavLink to="#">Electrification</NavLink>
                     </li>
                     <li className={"dropDownItem"}>
                       <i className="fa fa-chevron-right"></i>
-                      <a href="/#services">Civil Construction</a>
+                      <NavLink to="#">Civil Construction</NavLink>
                     </li>
                   </ul>
                 </li>
@@ -222,7 +214,10 @@ const Header = () => {
                   </NavLink>
                 </li>
                 <li className={"mainNavLink"}>
-                  <a href="/#contact">Contact Us</a>
+                  <NavLink to="#">News</NavLink>
+                </li>
+                <li className={"mainNavLink"}>
+                  <NavLink to="#">Contact Us</NavLink>
                 </li>
                 <li className={"mainNavLink"}>
                   <NavLink to="#"></NavLink>

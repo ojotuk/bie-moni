@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 .header-section {
@@ -25,8 +26,6 @@
 .carousel-container {
   z-index: 10 !important;
   width: 100%;
-  overflow-y: clip !important;
-  position: relative !important;
 }
 .carousel-container button {
   outline: none;

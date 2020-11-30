@@ -162,6 +162,7 @@
           align-items: center;
   margin-right: 2rem;
   position: relative;
+  color: white;
 }
 
 .header .nav .bottomBar .ulLeft .mainNavLink > a {
@@ -188,11 +189,13 @@
   transition: 0.5s;
 }
 
-.header .nav .bottomBar .ulLeft .mainNavLink:hover a {
+.header .nav .bottomBar .ulLeft .mainNavLink:hover a,
+.header .nav .bottomBar .ulLeft .mainNavLink span {
   color: #fdb900;
 }
 
-.header .nav .bottomBar .ulLeft .mainNavLink:hover a::after {
+.header .nav .bottomBar .ulLeft .mainNavLink:hover a::after,
+.header .nav .bottomBar .ulLeft .mainNavLink span::after {
   background-color: #fdb900;
   width: 100%;
 }

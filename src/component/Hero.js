@@ -34,18 +34,17 @@ const responsive = {
 const descriptionSlide = [
   {
     paragraph:
-      "sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus.",
+      "Providing High Quality Electrical & Civil Construction Services",
     link: "/",
     name: styles.slide_1,
-    caption: "Bigger,Better, Faster & Easier",
+    caption: "Bie-Moni Nig Ltd",
     id: 1,
   },
   {
-    paragraph:
-      "sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus.",
+    paragraph: "We Provide Experience and High Level worksolution for you.",
     link: "/",
     name: styles.slide_2,
-    caption: "Project Management & Industrial Solution",
+    caption: "Experts & Professionals",
     id: 2,
   },
 ];
@@ -70,20 +69,16 @@ const ContentOne = ({ slide }) => {
           <p ref={(el) => (p = el)}>{descriptionSlide[0].paragraph}</p>
           <div className={styles.ctaContainer}>
             <div className={styles.ctaWrapper1}>
-              <Link href={descriptionSlide[0].link}>
-                <a className={styles.aboutUsBtn} href="/">
-                  About Us
-                </a>
-                <span className={styles.colorSlide}></span>
-              </Link>
+              <a className={styles.aboutUsBtn} href="/#about">
+                About Us
+              </a>
+              <span className={styles.colorSlide}></span>
             </div>
             <div className={styles.ctaWrapper2}>
-              <Link href={descriptionSlide[0].link}>
-                <a className={styles.aboutUsBtn} href="/">
-                  Our Services
-                </a>
-                <span className={styles.colorSlide}></span>
-              </Link>
+              <a className={styles.aboutUsBtn} href="/#services">
+                Our Services
+              </a>
+              <span className={styles.colorSlide}></span>
             </div>
           </div>
           <div
@@ -119,20 +114,16 @@ const ContentTwo = ({ slide }) => {
           <p ref={(el) => (p = el)}>{descriptionSlide[1].paragraph}</p>
           <div className={styles.ctaContainer}>
             <div className={styles.ctaWrapper1}>
-              <Link href={descriptionSlide[1].link}>
-                <a className={styles.aboutUsBtn} href="/">
-                  About Us
-                </a>
-                <span className={styles.colorSlide}></span>
-              </Link>
+              <a className={styles.aboutUsBtn} href="/#about">
+                About Us
+              </a>
+              <span className={styles.colorSlide}></span>
             </div>
             <div className={styles.ctaWrapper2}>
-              <Link href={descriptionSlide[1].link}>
-                <a className={styles.aboutUsBtn} href="/">
-                  Our Services
-                </a>
-                <span className={styles.colorSlide}></span>
-              </Link>
+              <a className={styles.aboutUsBtn} href="/#services">
+                Our Services
+              </a>
+              <span className={styles.colorSlide}></span>
             </div>
           </div>
           <div
