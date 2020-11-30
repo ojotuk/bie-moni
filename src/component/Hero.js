@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import styles from "../styles/Slide.module.css";
-import { Link } from "react-router-dom";
 import { useRef } from "react";
 import {
   textIntro,

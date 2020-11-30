@@ -19,7 +19,6 @@ import powerlines from "../img/powerlines.jpg";
 import elect_supplies from "../img/elect_supplies.jpg";
 import welding from "../img/welding.jpg";
 import { useRef } from "react";
-import { Fade } from "react-reveal";
 
 const responsive = {
   desktop: {
