@@ -155,8 +155,8 @@
           justify-content: center;
   margin-left: 0.5rem;
   height: 100%;
-  -webkit-transform: translateY(5%);
-          transform: translateY(5%);
+  -webkit-transform: translateY(1%);
+          transform: translateY(1%);
 }
 
 .header .nav .bottomBar .brand .brand-name-wrapper span:first-child {

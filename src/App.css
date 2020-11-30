@@ -23,6 +23,9 @@
 .header-section .fixedBottomClass .large-screen-navigation a {
   color: #191919 !important;
 }
+.header-section .fixedBottomClass .brand-name-wrapper span:last-child {
+  color: #1b2a6d !important;
+}
 .carousel-container {
   z-index: 10 !important;
   width: 100%;
