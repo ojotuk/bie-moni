@@ -89,7 +89,7 @@
 
 .slideDescription > .content .wrapper .ctaContainer .ctaWrapper1,
 .slideDescription2 > .content .wrapper .ctaContainer .ctaWrapper1 {
-  background-color: #db7e01;
+  background-color: #eb1c24;
   width: 15rem;
   height: 5rem;
   position: relative;
@@ -121,7 +121,7 @@
   height: 100%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  background-color: #1b2a6d;
+  background-color: #f7f7f7;
   border-radius: 0.4rem;
 }
 
@@ -132,7 +132,7 @@
 
 .slideDescription > .content .wrapper .ctaContainer .ctaWrapper1:hover .aboutUsBtn,
 .slideDescription2 > .content .wrapper .ctaContainer .ctaWrapper1:hover .aboutUsBtn {
-  color: white;
+  color: #121212;
 }
 
 .slideDescription > .content .wrapper .ctaContainer .ctaWrapper2,

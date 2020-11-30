@@ -60,7 +60,7 @@ $fontFamliyText: "Poppins", sans-serif;
         display: flex;
         justify-content: center;
         .ctaWrapper1 {
-          background-color: $primaryYellow;
+          background-color: $primaryRed;
           width: 15rem;
           height: 5rem;
           position: relative;
@@ -85,7 +85,7 @@ $fontFamliyText: "Poppins", sans-serif;
             width: 0%;
             height: 100%;
             transition: 0.3s;
-            background-color: $primaryBlue;
+            background-color: #f7f7f7;
             border-radius: 0.4rem;
           }
           &:hover {
@@ -93,7 +93,7 @@ $fontFamliyText: "Poppins", sans-serif;
               width: 100%;
             }
             .aboutUsBtn {
-              color: white;
+              color: #121212;
             }
           }
         } //cta wrapper ends for about us
