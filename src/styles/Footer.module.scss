@@ -43,6 +43,7 @@ $fontFamliyText: "Poppins", sans-serif;
             // background-color: green;
             i {
               font-size: 4rem;
+              color: $primaryRed;
             }
             span {
               font-size: 2.4rem;
@@ -117,10 +118,11 @@ $fontFamliyText: "Poppins", sans-serif;
       .aboutUs {
         font-size: 1.4rem;
         // order: 3;
+        color: rgba($color: #ffffff, $alpha: 0.9);
         h6 {
           font-size: 1.8rem;
           margin-bottom: 2rem;
-          color: $primaryBlue;
+          color: white;
           span {
             color: $primaryRed;
             font-size: 2.4rem;
@@ -145,7 +147,8 @@ $fontFamliyText: "Poppins", sans-serif;
           margin-bottom: 1rem;
         }
         a {
-          color: #f3f3f3;
+          color: rgba($color: #ffffff, $alpha: 0.9);
+
           font-size: 1.4rem;
           text-decoration: none;
           transition: 0.3s;
@@ -169,8 +172,10 @@ $fontFamliyText: "Poppins", sans-serif;
         }
         p {
           font-size: 1.4rem;
+          color: rgba($color: #ffffff, $alpha: 0.9);
           span {
             color: $primaryRed;
+            letter-spacing: 0.1rem;
           }
         }
       }

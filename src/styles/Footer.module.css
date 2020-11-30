@@ -60,6 +60,7 @@
 
 .footerMain .container .wrapper .subscribe .content .translateWrapper i {
   font-size: 4rem;
+  color: #eb1c24;
 }
 
 .footerMain .container .wrapper .subscribe .content .translateWrapper span {
@@ -137,12 +138,13 @@
 
 .footerMain .container .wrapper .aboutUs {
   font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .footerMain .container .wrapper .aboutUs h6 {
   font-size: 1.8rem;
   margin-bottom: 2rem;
-  color: #1b2a6d;
+  color: white;
 }
 
 .footerMain .container .wrapper .aboutUs h6 span {
@@ -169,7 +171,7 @@
 }
 
 .footerMain .container .wrapper .quickLinks a {
-  color: #f3f3f3;
+  color: rgba(255, 255, 255, 0.9);
   font-size: 1.4rem;
   text-decoration: none;
   -webkit-transition: 0.3s;
@@ -196,10 +198,12 @@
 
 .footerMain .container .wrapper .address p {
   font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .footerMain .container .wrapper .address p span {
   color: #eb1c24;
+  letter-spacing: 0.1rem;
 }
 
 .copyright {
