@@ -31,7 +31,7 @@
 }
 
 .footerMain .container .wrapper .subscribe .content {
-  background-color: #fdb900;
+  background-color: #1b2a6d;
   padding: 3rem 1rem;
   width: 100%;
   position: relative;
@@ -55,7 +55,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-top: 1rem solid #0e2b5c;
+  border-top: 1rem solid #1b2a6d;
 }
 
 .footerMain .container .wrapper .subscribe .content .translateWrapper i {
@@ -120,7 +120,7 @@
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #0e2b5c;
+  background-color: #eb1c24;
   z-index: 1;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -142,10 +142,11 @@
 .footerMain .container .wrapper .aboutUs h6 {
   font-size: 1.8rem;
   margin-bottom: 2rem;
+  color: #1b2a6d;
 }
 
 .footerMain .container .wrapper .aboutUs h6 span {
-  color: #fdb900;
+  color: #eb1c24;
   font-size: 2.4rem;
 }
 
@@ -158,7 +159,7 @@
   content: "";
   height: 0.3rem;
   width: 2.5rem;
-  background-color: #fdb900;
+  background-color: #eb1c24;
   display: block;
   margin-top: 0.5rem;
 }
@@ -176,7 +177,7 @@
 }
 
 .footerMain .container .wrapper .quickLinks a:hover {
-  color: #fdb900;
+  color: #db7e01;
 }
 
 .footerMain .container .wrapper .address h6 {
@@ -188,7 +189,7 @@
   content: "";
   height: 0.3rem;
   width: 2.5rem;
-  background-color: #fdb900;
+  background-color: #eb1c24;
   display: block;
   margin-top: 0.5rem;
 }
@@ -198,7 +199,7 @@
 }
 
 .footerMain .container .wrapper .address p span {
-  color: #fdb900;
+  color: #eb1c24;
 }
 
 .copyright {
@@ -227,7 +228,7 @@
 }
 
 .copyright a:hover {
-  color: #fdb900;
+  color: #db7e01;
 }
 
 @media screen and (max-width: 992px) {

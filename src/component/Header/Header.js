@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../../img/logo-dark.png";
+import MobileNavigation from "../MobileNavigation";
+import logo from "../../img/bnml.PNG";
 import "../../styles/Navigation.css";
 
 const Header = () => {
@@ -132,6 +133,10 @@ const Header = () => {
             <div className={"wrapper  container"}>
               <a className={"brand navbar-brand"} href="/">
                 <img src={logo} className="logo-dark" alt="logo" />
+                <div className="brand-name-wrapper">
+                  <span>Bie-Moni</span>
+                  <span>Nigeria Limited</span>
+                </div>
               </a>
               <span className={"navToggler"} onClick={handleToggle}>
                 <i className={` fa fa-bars ${toggleColor}`}></i>
@@ -224,16 +229,17 @@ const Header = () => {
                 <li className={"mainNavLink"}>
                   <a href="/#contact">Contact Us</a>
                 </li>
-                <li className={"mainNavLink"}>
+                {/* <li className={"mainNavLink"}>
                   <NavLink to="#"></NavLink>
                   <i className="fa fa-search"></i>
-                </li>
+                </li> */}
               </ul>
             </div>
             {/* bottom Bar container ends */}
           </div>
           {/* bottom Bar ends */}
         </nav>
+        {/* <MobileNavigation /> */}
       </header>
     </>
   );

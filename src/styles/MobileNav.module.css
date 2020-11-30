@@ -1,0 +1,50 @@
+.mobileNav {
+  position: fixed;
+  top: 7rem;
+  background-color: transparent;
+  min-height: 100vh;
+  width: 100%;
+  overflow: scroll;
+}
+
+.mobileNav .ul {
+  position: absolute;
+  top: 0;
+  padding: 3rem 0;
+  font-size: 1.8rem;
+  background-color: transparent;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 2000;
+}
+
+.mobileNav .ul::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: transparent;
+  z-index: -10;
+}
+
+.mobileNav .ul .navLink {
+  padding-bottom: 1.5rem;
+  border-top: 0.2rem solid #dddddd;
+}
+
+.mobileNav .ul .navLink a {
+  color: #121212 !important;
+  text-decoration: none;
+}
+/*# sourceMappingURL=MobileNav.module.css.map */

@@ -105,8 +105,8 @@ const Landing = () => {
           <div className={styles.caption}>
             <h4>Our Services</h4>
             <h3>
-              High Quality Electrical and Civil Construction Solutions For
-              Residentials & Industries!
+              We Provide High Quality Electrical and Civil Construction
+              Solutions For Residentials & Industries!
             </h3>
             <div>Whats Our Offers</div>
             <span></span>

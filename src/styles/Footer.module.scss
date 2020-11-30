@@ -1,6 +1,6 @@
-$primary: #9b6d24;
-$primaryBlue: #0e2b5c;
-$primaryYellow: #fdb900;
+$primaryBlue: #1b2a6d;
+$primaryRed: #eb1c24;
+$primaryYellow: #db7e01;
 $bodyTextColor: #5166a7;
 $mainLinkTextSize: 1.6rem;
 $bodyTextSize: 1.6rem;
@@ -22,7 +22,7 @@ $fontFamliyText: "Poppins", sans-serif;
         padding: 3rem 2rem;
         width: 100%;
         .content {
-          background-color: $primaryYellow;
+          background-color: $primaryBlue;
           padding: 3rem 1rem;
           width: 100%;
           position: relative;
@@ -98,7 +98,7 @@ $fontFamliyText: "Poppins", sans-serif;
               left: 0;
               width: 0;
               height: 100%;
-              background-color: $primaryBlue;
+              background-color: $primaryRed;
               z-index: 1;
               transition: 0.3s;
               border-radius: 0.5rem;
@@ -120,8 +120,9 @@ $fontFamliyText: "Poppins", sans-serif;
         h6 {
           font-size: 1.8rem;
           margin-bottom: 2rem;
+          color: $primaryBlue;
           span {
-            color: $primaryYellow;
+            color: $primaryRed;
             font-size: 2.4rem;
           }
         }
@@ -135,7 +136,7 @@ $fontFamliyText: "Poppins", sans-serif;
             content: "";
             height: 0.3rem;
             width: 2.5rem;
-            background-color: $primaryYellow;
+            background-color: $primaryRed;
             display: block;
             margin-top: 0.5rem;
           }
@@ -161,7 +162,7 @@ $fontFamliyText: "Poppins", sans-serif;
             content: "";
             height: 0.3rem;
             width: 2.5rem;
-            background-color: $primaryYellow;
+            background-color: $primaryRed;
             display: block;
             margin-top: 0.5rem;
           }
@@ -169,7 +170,7 @@ $fontFamliyText: "Poppins", sans-serif;
         p {
           font-size: 1.4rem;
           span {
-            color: $primaryYellow;
+            color: $primaryRed;
           }
         }
       }

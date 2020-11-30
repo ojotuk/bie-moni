@@ -1,6 +1,7 @@
 $primary: #9b6d24;
-$primaryBlue: #0e2b5c;
-$primaryYellow: #fdb900;
+$primaryBlue: #1b2a6d;
+$primaryRed: #eb1c24;
+$primaryYellow: #db7e01;
 $bodyTextColor: #5166a7;
 $mainLinkTextSize: 1.6rem;
 $bodyTextSize: 1.6rem;
@@ -39,12 +40,17 @@ $fontFamliyText: "Poppins", sans-serif;
       h2 {
         font-size: 5rem;
         font-weight: 900;
-        color: #f7f7f7;
+        color: $primaryBlue;
         text-transform: capitalize;
-        letter-spacing: 0.3rem;
+        letter-spacing: 0.1rem;
         font-family: $fontFamliyTitle;
         outline: 1px;
         line-height: 6rem;
+        text-transform: uppercase;
+        // font-weight: 700;
+        span {
+          color: $primaryRed;
+        }
       }
       p {
         font-size: 1.8rem;
@@ -190,7 +196,7 @@ $fontFamliyText: "Poppins", sans-serif;
     > .content {
       .wrapper {
         h2 {
-          font-size: 3.6rem;
+          font-size: 3rem;
         }
         p {
           font-size: 1.5rem;
@@ -198,6 +204,21 @@ $fontFamliyText: "Poppins", sans-serif;
         .wrapperBoxTopLeft,
         .wrapperBoxBottomRight {
           display: none;
+        }
+        .ctaContainer {
+          flex-direction: column;
+          align-items: center;
+          // background-color: red;
+          padding: 1.5rem 0;
+          .ctaWrapper1 {
+            margin-right: 0;
+            margin-bottom: 2rem;
+            transform: scale(0.9);
+          }
+          .ctaWrapper2 {
+            margin-left: 0;
+            transform: scale(0.9);
+          }
         }
       }
     }

@@ -57,12 +57,18 @@
 .slideDescription2 > .content .wrapper h2 {
   font-size: 5rem;
   font-weight: 900;
-  color: #f7f7f7;
+  color: #1b2a6d;
   text-transform: capitalize;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.1rem;
   font-family: "Open Sans", sans-serif;
   outline: 1px;
   line-height: 6rem;
+  text-transform: uppercase;
+}
+
+.slideDescription > .content .wrapper h2 span,
+.slideDescription2 > .content .wrapper h2 span {
+  color: #eb1c24;
 }
 
 .slideDescription > .content .wrapper p,
@@ -83,7 +89,7 @@
 
 .slideDescription > .content .wrapper .ctaContainer .ctaWrapper1,
 .slideDescription2 > .content .wrapper .ctaContainer .ctaWrapper1 {
-  background-color: #fdb900;
+  background-color: #db7e01;
   width: 15rem;
   height: 5rem;
   position: relative;
@@ -115,7 +121,7 @@
   height: 100%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  background-color: #0e2b5c;
+  background-color: #1b2a6d;
   border-radius: 0.4rem;
 }
 
@@ -163,7 +169,7 @@
   height: 100%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  background-color: #0e2b5c;
+  background-color: #1b2a6d;
   border-radius: 0.4rem;
 }
 
@@ -229,7 +235,7 @@
 @media screen and (max-width: 500px) {
   .slideDescription > .content .wrapper h2,
   .slideDescription2 > .content .wrapper h2 {
-    font-size: 3.6rem;
+    font-size: 3rem;
   }
   .slideDescription > .content .wrapper p,
   .slideDescription2 > .content .wrapper p {
@@ -240,6 +246,30 @@
   .slideDescription2 > .content .wrapper .wrapperBoxTopLeft,
   .slideDescription2 > .content .wrapper .wrapperBoxBottomRight {
     display: none;
+  }
+  .slideDescription > .content .wrapper .ctaContainer,
+  .slideDescription2 > .content .wrapper .ctaContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1.5rem 0;
+  }
+  .slideDescription > .content .wrapper .ctaContainer .ctaWrapper1,
+  .slideDescription2 > .content .wrapper .ctaContainer .ctaWrapper1 {
+    margin-right: 0;
+    margin-bottom: 2rem;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .slideDescription > .content .wrapper .ctaContainer .ctaWrapper2,
+  .slideDescription2 > .content .wrapper .ctaContainer .ctaWrapper2 {
+    margin-left: 0;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
 }
 /*# sourceMappingURL=Slide.module.css.map */

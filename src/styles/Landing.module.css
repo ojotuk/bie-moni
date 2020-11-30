@@ -146,7 +146,7 @@ main {
 }
 
 .aboutUsSection .container .row .containerRight .wrapper .content .ctaWrapper {
-  background-color: #0e2b5c;
+  background-color: #1b2a6d;
   width: 15rem;
   height: 5rem;
   border-radius: 0.5rem;
@@ -195,7 +195,7 @@ main {
 }
 
 .aboutUsSection .container .row .containerRight .wrapper .content .ctaWrapper:hover span {
-  background-color: #fdb900;
+  background-color: #db7e01;
   width: 100%;
 }
 
@@ -223,13 +223,13 @@ main {
 }
 
 .coresSection .container h4 {
-  color: #fdb900;
+  color: #eb1c24;
   font-weight: 700;
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
-  width: 60rem;
-  max-width: 90vw;
   text-align: center;
+  padding-left: 0.5rem;
+  border-left: 0.5rem solid #1b2a6d;
 }
 
 .coresSection .container h3 {
@@ -245,7 +245,7 @@ main {
 }
 
 .coresSection .container h3 span {
-  color: #fdb900;
+  color: #eb1c24;
 }
 
 .coresSection .container .valueWrapper {
@@ -281,7 +281,7 @@ main {
 }
 
 .coresSection .container .valueWrapper div:hover {
-  background-color: #fdb900;
+  background-color: #1b2a6d;
 }
 
 .servicesSection {
@@ -319,20 +319,24 @@ main {
 }
 
 .servicesSection .caption h4 {
-  font-size: 1.6rem;
-  color: #fdb900;
+  font-size: 1.8rem;
+  color: #eb1c24;
   font-weight: 600;
   letter-spacing: 0.09rem;
   text-align: center;
+  padding-left: 0.5rem;
+  border-left: 0.5rem solid #1b2a6d;
 }
 
 .servicesSection .caption h3 {
   font-size: 2.4rem;
   margin: 1.5rem;
-  color: rgba(14, 43, 92, 0.4);
+  color: rgba(27, 42, 109, 0.4);
   font-weight: 900;
   letter-spacing: 0.1rem;
   text-align: center;
+  width: 70rem;
+  max-width: 90vw;
 }
 
 .servicesSection .caption div {
@@ -379,7 +383,7 @@ main {
 }
 
 .servicesSection .listDi ul li i {
-  background-color: #fdb900;
+  background-color: #eb1c24;
   border-radius: 50%;
   color: white;
   padding: 0.5rem;
@@ -412,7 +416,7 @@ main {
 }
 
 .intersection .container .ctaWrapper {
-  background-color: #fdb900;
+  background-color: #db7e01;
   height: 5rem;
   width: 15rem;
   position: relative;
@@ -442,7 +446,7 @@ main {
 .intersection .container .ctaWrapper span {
   width: 100%;
   height: 100%;
-  background-color: #0e2b5c;
+  background-color: #1b2a6d;
   position: absolute;
   top: 0;
   border-radius: 0.5rem;
@@ -502,6 +506,12 @@ main {
   }
   .intersection .container span {
     margin-bottom: 2rem;
+  }
+  .servicesSection .caption h3 {
+    font-size: 1.8rem;
+  }
+  .servicesSection .caption div {
+    font-size: 3rem;
   }
 }
 

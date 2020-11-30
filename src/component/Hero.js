@@ -36,14 +36,16 @@ const descriptionSlide = [
       "Providing High Quality Electrical & Civil Construction Services",
     link: "/",
     name: styles.slide_1,
-    caption: "Bie-Moni Nig Ltd",
+    caption: "Nig Ltd",
+    span: "Bie-Moni",
     id: 1,
   },
   {
     paragraph: "We Provide Experience and High Level worksolution for you.",
     link: "/",
     name: styles.slide_2,
-    caption: "Bie-Moni Nig Ltd",
+    caption: "Nig Ltd",
+    span: "Bie-Moni",
     id: 2,
   },
 ];
@@ -64,7 +66,10 @@ const ContentOne = ({ slide }) => {
     <div className={styles.slideDescription}>
       <div className={styles.content + " container"}>
         <div className={styles.wrapper}>
-          <h2 ref={(el) => (h2 = el)}>{descriptionSlide[0].caption}</h2>
+          <h2 ref={(el) => (h2 = el)}>
+            <span>{descriptionSlide[0].span}</span>{" "}
+            {descriptionSlide[0].caption}
+          </h2>
           <p ref={(el) => (p = el)}>{descriptionSlide[0].paragraph}</p>
           <div className={styles.ctaContainer}>
             <div className={styles.ctaWrapper1}>
@@ -109,7 +114,10 @@ const ContentTwo = ({ slide }) => {
     <div className={styles.slideDescription2}>
       <div className={styles.content + " container"}>
         <div className={styles.wrapper}>
-          <h2 ref={(el) => (h2 = el)}>{descriptionSlide[1].caption}</h2>
+          <h2 ref={(el) => (h2 = el)}>
+            <span>{descriptionSlide[0].span}</span>{" "}
+            {descriptionSlide[1].caption}
+          </h2>
           <p ref={(el) => (p = el)}>{descriptionSlide[1].paragraph}</p>
           <div className={styles.ctaContainer}>
             <div className={styles.ctaWrapper1}>
