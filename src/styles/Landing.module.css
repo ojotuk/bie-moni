@@ -215,7 +215,6 @@ main {
   background-position: center;
   background-size: cover;
   padding: 7rem 0;
-  background-attachment: fixed;
 }
 
 .coresSection .container {
@@ -301,8 +300,9 @@ main {
   background-image: url("../img/transformerbg.jpg");
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 .servicesSection::after {
@@ -405,6 +405,7 @@ main {
   color: white;
   padding: 0.5rem;
   margin-right: 1rem;
+  font-size: 1.4rem;
 }
 
 .intersection {

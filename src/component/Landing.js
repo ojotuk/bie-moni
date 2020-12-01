@@ -12,7 +12,8 @@ import Services from "./Services";
 import Footer from "./Footer";
 import { Fade, Slide, Zoom } from "react-reveal";
 import Clients from "./Clients";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import logo from "../img/bnml.PNG";
 
 const Landing = () => {
   const [show, setShow] = useState(" ");
@@ -41,7 +42,7 @@ const Landing = () => {
   window.addEventListener("scroll", scrollPositionHandler);
   return (
     <section className="main">
-      <section className="header-section">
+      <section className="header-section" id="home">
         <Header />
       </section>
       <Hero />
@@ -77,6 +78,12 @@ const Landing = () => {
               <Zoom right>
                 <div className={styles.wrapper}>
                   <div className={styles.content}>
+                    <img
+                      src={logo}
+                      alt="bnml logo"
+                      width="50px"
+                      className="mb-2"
+                    />
                     <h2>
                       <span>Bie-Moni</span> Nigeria Limited
                     </h2>
@@ -93,13 +100,9 @@ const Landing = () => {
                     </p>
                     <div className={styles.ctaWrapper}>
                       <div className={styles.cta}>
-                        <Link
-                          download
-                          to="/files/bie-moni_profile.pdf"
-                          target="_blank"
-                        >
+                        <a download href="/" target="_blank">
                           Our Profile<i className="fa fa-download"></i>
-                        </Link>
+                        </a>
                       </div>
                       <span></span>
                     </div>
@@ -135,7 +138,9 @@ const Landing = () => {
       <section className={styles.servicesSection}>
         <div className="container" id="services">
           <div className={styles.caption}>
-            <h4>Our Services</h4>
+            <Zoom>
+              <h4>Our Services</h4>
+            </Zoom>
             <h3>
               We Provide High Quality Electrical and Civil Construction
               Solutions For Residentials & Industries!
@@ -144,7 +149,7 @@ const Landing = () => {
             <span></span>
           </div>
           <Services />
-          <Fade left>
+          <Fade up>
             <div className={styles.listDi + " mt-4"}>
               <ul className="row text-black">
                 <li className="col-lg-4">
@@ -300,7 +305,7 @@ const Landing = () => {
         <Footer />
       </section>
 
-      <a href="/#" className={styles.scrollTop + " " + styles[show]}>
+      <a href="/#home" className={styles.scrollTop + " " + styles[show]}>
         <i className=" fa fa-arrow-up"></i>
       </a>
     </section>
