@@ -482,9 +482,6 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .faqSection .container .imgWrapper img {
@@ -674,6 +671,14 @@ main {
 
 @media screen and (max-width: 992px) {
   .faqSection .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .faqSection .container .faqWrapper {
+    padding-left: 0;
+    max-width: 90vw;
+  }
+  .faqSection .container .faqWrapper .content .inputs {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
