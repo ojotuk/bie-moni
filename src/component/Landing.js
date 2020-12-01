@@ -12,6 +12,7 @@ import Services from "./Services";
 import Footer from "./Footer";
 import { Fade, Slide, Zoom } from "react-reveal";
 import Clients from "./Clients";
+import { Link } from "react-router-dom";
 
 const Landing = () => {
   const [show, setShow] = useState(" ");
@@ -92,9 +93,13 @@ const Landing = () => {
                     </p>
                     <div className={styles.ctaWrapper}>
                       <div className={styles.cta}>
-                        <a href="/bie-moni_profile.pdf">
+                        <Link
+                          download
+                          to="/files/bie-moni_profile.pdf"
+                          target="_blank"
+                        >
                           Our Profile<i className="fa fa-download"></i>
-                        </a>
+                        </Link>
                       </div>
                       <span></span>
                     </div>
