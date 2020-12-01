@@ -682,5 +682,9 @@ main {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+  .faqSection .container .faqWrapper .content .inputs input,
+  .faqSection .container .faqWrapper .content .inputs select {
+    max-width: 74vw;
+  }
 }
 /*# sourceMappingURL=Landing.module.css.map */

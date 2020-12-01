@@ -583,6 +583,10 @@ main {
         .content {
           .inputs {
             grid-template-columns: 1fr;
+            input,
+            select {
+              max-width: 74vw;
+            }
           }
         }
       }
