@@ -3,12 +3,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import styles from "../styles/Services.module.css";
 
-//
-import icon_3 from "../img/icon_service_3.png";
-import icon_2 from "../img/icon_service_2.png";
-import icon_1 from "../img/icon_service_1.png";
-import icon_4 from "../img/icon_service_4.png";
-
 import bonny_lga from "../img/bonny_lga.png";
 import river_state from "../img/river_state.jpg";
 import saipem_logo from "../img/saipem_logo.png";
