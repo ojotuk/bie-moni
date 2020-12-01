@@ -32,7 +32,7 @@
 }
 
 .wrapperServices .cardWrapper .cardUp .cardUpDrop a {
-  color: #fdb900;
+  color: #db7e01;
   text-decoration: none;
   font-size: 1.4rem;
 }
@@ -50,7 +50,7 @@
 }
 
 .wrapperServices .cardWrapper .ctaDiv {
-  background-color: #0e2b5c;
+  background-color: #1b2a6d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,6 +59,7 @@
           align-items: center;
   color: white;
   height: 5rem;
+  border-left: 0.5rem solid #eb1c24 !important;
 }
 
 .wrapperServices .cardWrapper .ctaDiv .iconDiv {
@@ -71,7 +72,7 @@
 .wrapperServices .cardWrapper .ctaDiv .iconDiv .icon {
   width: 100%;
   height: 100%;
-  background-color: #9b6d24;
+  background-color: #eb1c24;
 }
 
 .wrapperServices .cardWrapper .ctaDiv p {
@@ -87,6 +88,10 @@
           align-items: center;
   margin-bottom: 0;
   font-size: 1.6rem;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .wrapperServices .logo {

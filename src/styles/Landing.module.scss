@@ -125,7 +125,7 @@ main {
             }
             .ctaWrapper {
               background-color: $primaryBlue;
-              width: 15rem;
+              width: 20rem;
               height: 5rem;
               border-radius: 0.5rem;
               position: relative;
@@ -143,10 +143,15 @@ main {
                   height: 100%;
                   display: flex;
                   justify-content: center;
+                  // align-items: center;
                   font-size: $mainLinkTextSize;
                   text-decoration: none;
                   color: white;
                   letter-spacing: 0.1rem;
+                  i {
+                    margin-left: 0.5rem;
+                    margin-top: 0.2rem;
+                  }
                 }
               } //cta ends
               span {
@@ -198,14 +203,15 @@ main {
       // max-width: 90vw;
       text-align: center;
       padding-left: 0.5rem;
-      border-left: 0.5rem solid $primaryBlue;
+      border-left: 0.5rem solid white;
+      font-family: "Open Sans" sans-serif !important;
     }
     h3 {
       color: #f7f7f7;
       font-size: 3.6rem;
       margin: 1.5rem 0;
       margin-bottom: 4rem;
-      font-weight: 700;
+      font-weight: 400;
       width: 60rem;
       max-width: 90vw;
       text-align: center;
@@ -245,6 +251,9 @@ main {
   padding-top: 4rem;
   padding-bottom: 8rem;
   background-image: url("../img/transformerbg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   position: relative;
   &::after {
     //over lay
@@ -252,7 +261,7 @@ main {
     width: 100%;
     height: 100%;
     display: block;
-    background-color: rgba($color: #f7f7f7, $alpha: 0.8);
+    background-color: rgba($color: #1b2a6d, $alpha: 0.9);
     position: absolute;
     top: 0;
     z-index: 1;
@@ -271,12 +280,13 @@ main {
       letter-spacing: 0.09rem;
       text-align: center;
       padding-left: 0.5rem;
-      border-left: 0.5rem solid $primaryBlue;
+      border-left: 0.5rem solid #ffffff;
     }
     h3 {
-      font-size: 2.4rem;
+      font-size: 1.6rem;
       margin: 1.5rem;
-      color: rgba($color: $primaryBlue, $alpha: 0.4);
+      // color: rgba($color: $primaryBlue, $alpha: 0.4);
+      color: #f3f3f3f3;
       font-weight: 900;
       letter-spacing: 0.1rem;
       text-align: center;
@@ -286,10 +296,12 @@ main {
     div {
       font-size: 3.6rem;
       text-align: center;
+      color: #f3f3f3;
+      font-weight: 200;
       &::after {
         content: "";
         height: 0.3rem;
-        background-color: #000000;
+        background-color: $primaryRed;
         width: 25%;
         display: block;
         margin: 0 auto;
@@ -299,7 +311,7 @@ main {
     }
     span {
       height: 0.3rem;
-      background-color: #000000;
+      background-color: #ffffff;
       width: 2.5%;
       display: block;
       margin-top: 1rem;
@@ -319,6 +331,7 @@ main {
       flex-wrap: wrap;
       li {
         padding: 1rem;
+        color: white;
         i {
           background-color: $primaryRed;
           border-radius: 50%;
@@ -427,6 +440,7 @@ main {
             outline: none;
             padding: 1rem 1.5rem;
             border: 0.1rem solid $bodyTextColorGrey;
+            display: flex;
           }
         }
         textarea {
@@ -469,6 +483,33 @@ main {
       color: $primaryRed;
       font-weight: 600;
       margin-bottom: 3rem;
+    }
+  }
+}
+//socials
+.socialsBottom {
+  width: 100%;
+  padding: 3rem;
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    .ul {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      .li {
+        font-size: 1.6rem;
+        transition: 0.3s;
+        a {
+          color: #eb1c24;
+          padding: 1.5rem;
+          font-size: 1.8rem;
+        }
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
     }
   }
 }
@@ -583,10 +624,6 @@ main {
         .content {
           .inputs {
             grid-template-columns: 1fr;
-            input,
-            select {
-              max-width: 74vw;
-            }
           }
         }
       }

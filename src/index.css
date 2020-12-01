@@ -8,10 +8,11 @@ html,
 body {
   margin: 0;
   font-size: 10px;
-  font-family: "Poppins", serif;
+  font-family: "Poppins", "Open Sans", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
+  scroll-behavior: smooth;
 }
 ul {
   list-style: none;

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Header from "./Header/Header";
 import Hero from "./Hero";
 import styles from "../styles/Landing.module.css";
-import { Link } from "react-router-dom";
 import about1 from "../img/about_1.jpg";
 import overlap1 from "../img/img_overlap.jpg";
 import pattern from "../img/pattern.webp";
@@ -93,7 +92,9 @@ const Landing = () => {
                     </p>
                     <div className={styles.ctaWrapper}>
                       <div className={styles.cta}>
-                        <Link to="#">Learn More</Link>
+                        <a href="/bie-moni_profile.pdf">
+                          Our Profile<i className="fa fa-download"></i>
+                        </a>
                       </div>
                       <span></span>
                     </div>
@@ -208,18 +209,21 @@ const Landing = () => {
                   placeholder="Name"
                   name="name"
                   value={details.name}
+                  autoComplete="off"
                 />
                 <input
                   type="email"
                   placeholder="Email"
                   name="email"
                   value={details.email}
+                  autoComplete="off"
                 />
                 <input
                   type="phone"
                   placeholder="Phone"
                   name="phone"
                   value={details.phone}
+                  autoComplete="off"
                 />
                 <select value={details.serviceType} name="serviceType">
                   <option value={null}>Select services</option>
@@ -237,6 +241,7 @@ const Landing = () => {
                 placeholder="Additional details"
                 value={details.additionalDetails}
                 name="additionaDetails"
+                autoComplete="off"
               ></textarea>
               {/* </div> */}
               <button className="btn d-block">Submit Request</button>
@@ -247,8 +252,42 @@ const Landing = () => {
       {/* clients */}
       <section className={styles.clientSection}>
         <div className={styles.container + " container"}>
-          <h4 className={styles.title}>Cleints</h4>
+          <h4 className={styles.title}>Our Cleints</h4>
           <Clients />
+        </div>
+      </section>
+      <section className={styles.socialsBottom}>
+        <div className={styles.container + " container"}>
+          <ul className={styles.ul}>
+            <li className={styles.li}>
+              <a
+                href="https://www.facebook.com/BieMoniNg"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <i className="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li className={styles.li}>
+              <a href="/">
+                <i className="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li className={styles.li}>
+              <a href="/">
+                <i className="fa fa-linkedin"></i>
+              </a>
+            </li>
+            <li className={styles.li}>
+              <a
+                href="https://wa.me/2348033100730"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <i className="fa fa-whatsapp"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
       {/* FOOTER */}

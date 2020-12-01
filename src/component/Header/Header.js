@@ -150,7 +150,7 @@ const Header = () => {
                   onClick={() => expandHandler("companys")}
                 >
                   <NavLink to="/#">
-                    Companys<i className="fa fa-chevron-down"></i>
+                    Company<i className="fa fa-chevron-down"></i>
                     <i
                       className={
                         expand.companys

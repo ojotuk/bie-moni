@@ -10,6 +10,8 @@ import icon_1 from "../img/icon_service_1.png";
 import icon_4 from "../img/icon_service_4.png";
 
 import bonny_lga from "../img/bonny_lga.png";
+import river_state from "../img/river_state.jpg";
+import saipem_logo from "../img/saipem_logo.png";
 // import { useRef } from "react";
 
 const responsive = {
@@ -31,48 +33,23 @@ const responsive = {
 };
 const descriptionSlide = [
   {
-    paragraph:
-      "Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus.",
-    link: "/",
-    type: "Road Construction",
-    img: bonny_lga,
-    icon: icon_1,
+    img: saipem_logo,
     id: 1,
   },
   {
-    paragraph:
-      "Our design professionals are equipped to help determine the design that work best for our customers within the colours.",
-    link: "/",
-    type: "Landscape Designs",
     img: bonny_lga,
-    icon: icon_2,
     id: 2,
   },
   {
-    paragraph:
-      "Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus.",
-    link: "/",
-    type: "Structural Works",
-    img: bonny_lga,
-    icon: icon_3,
+    img: saipem_logo,
     id: 3,
   },
   {
-    paragraph:
-      "Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus.",
-    link: "/",
-    type: "Building Construction",
-    img: bonny_lga,
-    icon: icon_4,
+    img: river_state,
     id: 4,
   },
   {
-    paragraph:
-      "Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus.",
-    link: "/",
-    type: "Boreholes & Water Installation",
     img: bonny_lga,
-    icon: icon_4,
     id: 5,
   },
 ];

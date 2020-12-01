@@ -152,7 +152,7 @@ main {
 
 .aboutUsSection .container .row .containerRight .wrapper .content .ctaWrapper {
   background-color: #1b2a6d;
-  width: 15rem;
+  width: 20rem;
   height: 5rem;
   border-radius: 0.5rem;
   position: relative;
@@ -183,6 +183,11 @@ main {
   text-decoration: none;
   color: white;
   letter-spacing: 0.1rem;
+}
+
+.aboutUsSection .container .row .containerRight .wrapper .content .ctaWrapper .cta a i {
+  margin-left: 0.5rem;
+  margin-top: 0.2rem;
 }
 
 .aboutUsSection .container .row .containerRight .wrapper .content .ctaWrapper span {
@@ -234,7 +239,8 @@ main {
   letter-spacing: 0.1rem;
   text-align: center;
   padding-left: 0.5rem;
-  border-left: 0.5rem solid #1b2a6d;
+  border-left: 0.5rem solid white;
+  font-family: "Open Sans" sans-serif !important;
 }
 
 .coresSection .container h3 {
@@ -242,7 +248,7 @@ main {
   font-size: 3.6rem;
   margin: 1.5rem 0;
   margin-bottom: 4rem;
-  font-weight: 700;
+  font-weight: 400;
   width: 60rem;
   max-width: 90vw;
   text-align: center;
@@ -293,6 +299,9 @@ main {
   padding-top: 4rem;
   padding-bottom: 8rem;
   background-image: url("../img/transformerbg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   position: relative;
 }
 
@@ -301,7 +310,7 @@ main {
   width: 100%;
   height: 100%;
   display: block;
-  background-color: rgba(247, 247, 247, 0.8);
+  background-color: rgba(27, 42, 109, 0.9);
   position: absolute;
   top: 0;
   z-index: 1;
@@ -330,13 +339,13 @@ main {
   letter-spacing: 0.09rem;
   text-align: center;
   padding-left: 0.5rem;
-  border-left: 0.5rem solid #1b2a6d;
+  border-left: 0.5rem solid #ffffff;
 }
 
 .servicesSection .caption h3 {
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   margin: 1.5rem;
-  color: rgba(27, 42, 109, 0.4);
+  color: #f3f3f3f3;
   font-weight: 900;
   letter-spacing: 0.1rem;
   text-align: center;
@@ -347,12 +356,14 @@ main {
 .servicesSection .caption div {
   font-size: 3.6rem;
   text-align: center;
+  color: #f3f3f3;
+  font-weight: 200;
 }
 
 .servicesSection .caption div::after {
   content: "";
   height: 0.3rem;
-  background-color: #000000;
+  background-color: #eb1c24;
   width: 25%;
   display: block;
   margin: 0 auto;
@@ -362,7 +373,7 @@ main {
 
 .servicesSection .caption span {
   height: 0.3rem;
-  background-color: #000000;
+  background-color: #ffffff;
   width: 2.5%;
   display: block;
   margin-top: 1rem;
@@ -385,6 +396,7 @@ main {
 
 .servicesSection .listDi ul li {
   padding: 1rem;
+  color: white;
 }
 
 .servicesSection .listDi ul li i {
@@ -525,6 +537,9 @@ main {
   outline: none;
   padding: 1rem 1.5rem;
   border: 0.1rem solid #888888;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .faqSection .container .faqWrapper .content textarea {
@@ -575,6 +590,48 @@ main {
   color: #eb1c24;
   font-weight: 600;
   margin-bottom: 3rem;
+}
+
+.socialsBottom {
+  width: 100%;
+  padding: 3rem;
+}
+
+.socialsBottom .container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.socialsBottom .container .ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.socialsBottom .container .ul .li {
+  font-size: 1.6rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.socialsBottom .container .ul .li a {
+  color: #eb1c24;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.socialsBottom .container .ul .li:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .footerSection {
@@ -681,10 +738,6 @@ main {
   .faqSection .container .faqWrapper .content .inputs {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-  }
-  .faqSection .container .faqWrapper .content .inputs input,
-  .faqSection .container .faqWrapper .content .inputs select {
-    max-width: 74vw;
   }
 }
 /*# sourceMappingURL=Landing.module.css.map */

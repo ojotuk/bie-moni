@@ -178,9 +178,9 @@ const Hero = (props) => {
                 <img className={styles.img} src={slide.img} alt="" />
               </div>
               <div className={styles.ctaDiv}>
-                <div className={styles.iconDiv}>
+                {/* <div className={styles.iconDiv}>
                   <img src={slide.icon} className={styles.icon} alt="" />
-                </div>
+                </div> */}
                 <p className={styles.cardDownText}>{slide.type}</p>
               </div>
             </div>

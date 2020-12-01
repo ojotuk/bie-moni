@@ -6,7 +6,11 @@ $mainLinkTextSize: 1.6rem;
 $bodyTextSize: 1.6rem;
 
 .header {
-  //   background-color: red;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.1)
+  );
   .nav {
     //   top
     .topBar {
