@@ -82,17 +82,17 @@ main {
 }
 
 .aboutUsSection .container .row .containerLeft .powerlines {
-  width: 10%;
+  width: 5rem;
   position: absolute;
   bottom: 10rem;
   left: 10rem;
 }
 
 .aboutUsSection .container .row .containerLeft .road {
-  width: 20%;
+  width: 7rem;
   position: absolute;
   bottom: 15rem;
-  left: 3rem;
+  left: 5rem;
 }
 
 .aboutUsSection .container .row .containerRight {
@@ -137,6 +137,11 @@ main {
 
 .aboutUsSection .container .row .containerRight .wrapper .content h2 {
   font-size: 2.4rem;
+  font-family: "Open Sans" serif;
+}
+
+.aboutUsSection .container .row .containerRight .wrapper .content h2 span {
+  color: #eb1c24;
 }
 
 .aboutUsSection .container .row .containerRight .wrapper .content p {
@@ -195,7 +200,7 @@ main {
 }
 
 .aboutUsSection .container .row .containerRight .wrapper .content .ctaWrapper:hover span {
-  background-color: #db7e01;
+  background-color: #eb1c24;
   width: 100%;
 }
 
@@ -460,13 +465,150 @@ main {
           transform: scale(0);
 }
 
+.faqSection {
+  padding: 8rem 0 5rem 0;
+}
+
+.faqSection .container {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.faqSection .container .imgWrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.faqSection .container .imgWrapper img {
+  max-width: 100%;
+}
+
+.faqSection .container .faqWrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 2rem;
+}
+
+.faqSection .container .faqWrapper .content {
+  font-size: 1.6rem;
+  padding: 3rem;
+  -webkit-box-shadow: 0.1rem 0.1rem 0.4rem 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0.1rem 0.1rem 0.4rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.faqSection .container .faqWrapper .content h4 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.faqSection .container .faqWrapper .content p {
+  color: #888888;
+  margin: 1rem 0;
+}
+
+.faqSection .container .faqWrapper .content .inputs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.faqSection .container .faqWrapper .content .inputs input,
+.faqSection .container .faqWrapper .content .inputs select {
+  outline: none;
+  padding: 1rem 1.5rem;
+  border: 0.1rem solid #888888;
+}
+
+.faqSection .container .faqWrapper .content textarea {
+  outline: none;
+  width: 100%;
+  margin-top: 2rem;
+  min-height: 10rem;
+  max-height: 10rem;
+  padding: 1rem 1.5rem;
+  border: 0.1rem solid #888888;
+}
+
+.faqSection .container .faqWrapper .content button {
+  background-color: #eb1c24;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.clientSection {
+  padding: 4rem 0;
+  width: 100%;
+}
+
+.clientSection .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.clientSection .container .title {
+  font-size: 1.8rem;
+  text-align: center;
+  border-left: 0.5rem solid #1b2a6d;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding-left: 1rem;
+  color: #eb1c24;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
 .footerSection {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
 .featured {
-  min-height: 50vh;
   width: 100%;
+}
+
+.scrollTop {
+  background-color: #1b2a6d;
+  position: fixed;
+  right: -50rem;
+  bottom: 2rem;
+  padding: 1rem;
+  font-size: 2.4rem;
+  color: #eb1c24;
+  z-index: 100;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.scrollTop:hover {
+  color: white;
+}
+
+.scrollTopShow {
+  right: 1rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media screen and (max-width: 590px) {
@@ -527,6 +669,13 @@ main {
   }
   .coresSection .container .valueWrapper div {
     margin: 1rem auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .faqSection .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 /*# sourceMappingURL=Landing.module.css.map */

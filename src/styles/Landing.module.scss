@@ -78,16 +78,16 @@ main {
           z-index: 10;
         }
         .powerlines {
-          width: 10%;
+          width: 5rem;
           position: absolute;
           bottom: 10rem;
           left: 10rem;
         }
         .road {
-          width: 20%;
+          width: 7rem;
           position: absolute;
           bottom: 15rem;
-          left: 3rem;
+          left: 5rem;
         }
       } //container left ends
       .containerRight {
@@ -113,6 +113,10 @@ main {
             padding-top: 12rem;
             h2 {
               font-size: 2.4rem;
+              span {
+                color: $primaryRed;
+              }
+              font-family: "Open Sans" serif;
             }
             p {
               font-size: 1.4rem;
@@ -160,7 +164,7 @@ main {
               //hover ctaWrapper
               &:hover {
                 span {
-                  background-color: $primaryYellow;
+                  background-color: $primaryRed;
                   width: 100%;
                 }
               }
@@ -381,6 +385,93 @@ main {
     }
   }
 }
+//faq
+.faqSection {
+  // background-color: red;
+  padding: 8rem 0 5rem 0;
+  .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    .imgWrapper {
+      flex: 1;
+      display: flex;
+      img {
+        max-width: 100%;
+      }
+    }
+    .faqWrapper {
+      // background-color: blue;
+      flex: 1;
+      padding-left: 2rem;
+      .content {
+        font-size: 1.6rem;
+        // background-color: #eb1c24;
+        padding: 3rem;
+        box-shadow: 0.1rem 0.1rem 0.4rem 0 rgba($color: #000000, $alpha: 0.3);
+        h4 {
+          font-size: 1.8rem;
+          font-weight: 700;
+        }
+        p {
+          color: #888888;
+          margin: 1rem 0;
+        }
+        .inputs {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1.5rem;
+          input,
+          select {
+            outline: none;
+            padding: 1rem 1.5rem;
+            border: 0.1rem solid $bodyTextColorGrey;
+          }
+        }
+        textarea {
+          outline: none;
+          width: 100%;
+          margin-top: 2rem;
+          // height: 5rem;
+          min-height: 10rem;
+          max-height: 10rem;
+          padding: 1rem 1.5rem;
+          border: 0.1rem solid #888888;
+        }
+        button {
+          background-color: $primaryRed;
+          display: flex;
+          width: 100%;
+          font-size: 1.6rem;
+          color: white;
+        }
+      }
+    }
+  }
+}
+.clientSection {
+  // min-height: 20vh;
+  padding: 4rem 0;
+  width: 100%;
+  .container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    // align-items: center;
+    .title {
+      font-size: 1.8rem;
+      text-align: center;
+      border-left: 0.5rem solid $primaryBlue;
+      width: fit-content;
+      margin: 0 auto;
+      padding-left: 1rem;
+      color: $primaryRed;
+      font-weight: 600;
+      margin-bottom: 3rem;
+    }
+  }
+}
 
 //footer
 .footerSection {
@@ -388,8 +479,26 @@ main {
   background-color: rgba($color: #000000, $alpha: 0.9);
 }
 .featured {
-  min-height: 50vh;
+  // min-height: 50vh;
   width: 100%;
+}
+.scrollTop {
+  background-color: #1b2a6d;
+  position: fixed;
+  right: -50rem;
+  bottom: 2rem;
+  padding: 1rem;
+  font-size: 2.4rem;
+  color: #eb1c24;
+  z-index: 100;
+  transition: all 0.3s;
+  &:hover {
+    color: white;
+  }
+}
+.scrollTopShow {
+  right: 1rem;
+  transition: all 0.3s;
 }
 
 @media screen and (max-width: 590px) {
@@ -460,6 +569,13 @@ main {
       div {
         margin: 1rem auto;
       }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .faqSection {
+    .container {
+      grid-template-columns: 1fr;
     }
   }
 }

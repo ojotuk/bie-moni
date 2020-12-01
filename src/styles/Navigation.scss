@@ -133,8 +133,62 @@ $bodyTextSize: 1.6rem;
       }
       .navToggler {
         display: none;
+
         font-size: 3rem;
-        color: white;
+        width: 4rem;
+        height: 4rem;
+        color: black;
+        border: 0.1rem solid $primaryRed;
+        position: relative;
+        padding: 0.5rem 1rem;
+        .bar {
+          height: 0.3rem;
+          width: 3rem;
+          background-color: $primaryBlue;
+          justify-self: center;
+          position: absolute;
+          bottom: 50%;
+          left: 50%;
+          transform: translate(-50%, 50%);
+          visibility: visible;
+          transition: all 0.3s;
+          &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            top: 1rem;
+            background-color: $primaryYellow;
+            transition: all 0.3s;
+          }
+          &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            top: -1rem;
+            background-color: $primaryRed;
+            transition: all 0.3s;
+          }
+        }
+      }
+      .navToggler {
+        .times {
+          visibility: hidden;
+          &::before {
+            // left: -200%;
+            visibility: visible;
+            top: 0;
+            transform: rotate(45deg);
+          }
+          &::after {
+            visibility: visible;
+            top: 0;
+            transform: rotate(-45deg);
+          }
+        }
       }
       .large-screen-navigation {
         flex: 1;
@@ -244,21 +298,25 @@ $bodyTextSize: 1.6rem;
       }
       .mobile-navigation {
         position: absolute;
-        top: 10rem;
+        top: -10rem;
         left: 0;
         max-height: 0;
         overflow: hidden;
         // background-color: rgba($color: #000000, $alpha: 0.9);
         background-color: $primaryBlue;
-        transition: max-height 0.5s, opacity 0s;
+        transition: all 0.5s;
         opacity: 0;
+        visibility: hidden;
         padding-bottom: 2rem;
       }
       .drop-open {
+        top: 10rem;
         max-height: calc(200vh - 7.5rem);
+        // background-color: #eb1c24;
         display: flex;
         flex-direction: column;
         overflow: visible;
+        visibility: visible;
         opacity: 1;
         .mainNavLink {
           font-size: 1.6rem;

@@ -44,7 +44,7 @@ export const fromBottom = (elem) => {
 export const scaleBg = (elem) => {
   gsap.to(elem, {
     scale: 1.5,
-    duration: 5,
+    duration: 10,
   });
 };
 export const topLeftBox = (elem) => {

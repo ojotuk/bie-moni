@@ -8,7 +8,6 @@ const Header = () => {
   const [screenSizeChange, setScreenSizeChange] = useState(window.innerWidth);
   const [expand, setExpand] = useState({ companys: false, services: false });
   const [fixedNav, setFixedNav] = useState(" ");
-  const [toggleColor, setToggleColor] = useState(" ");
 
   let navElement = useRef(null);
   let dropElement1 = useRef(null);
@@ -18,13 +17,11 @@ const Header = () => {
     // console.log(window.scrollY);
     if (window.scrollY > window.innerHeight / 2) {
       setFixedNav("fixedBottomClass fixedBottomClassActivated");
-      setToggleColor("black");
     } else if (window.scrollY > window.innerHeight / 5) {
       // console.log("fixed");
       setFixedNav("fixedBottomClass");
     } else {
       setFixedNav(" ");
-      setToggleColor(" ");
     }
   };
   window.addEventListener("scroll", scrollPositionHandler);
@@ -137,12 +134,9 @@ const Header = () => {
                   <span>Nigeria Limited</span>
                 </div>
               </a>
-              <span className={"navToggler"} onClick={handleToggle}>
-                <i className={` fa fa-bars ${toggleColor}`}></i>
-              </span>
-              {/* <span className={styles.navTogglerClose}>
-                <i className="fa fa-times "></i>
-              </span> */}
+              <div className={"navToggler"} onClick={handleToggle}>
+                <div className={open ? "bar" : "bar times"}></div>
+              </div>
               <ul
                 className={"large-screen-navigation container"}
                 ref={navElement}

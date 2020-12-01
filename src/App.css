@@ -47,6 +47,8 @@
 }
 .extra-div img {
   width: 100%;
+  background-position: center;
+  background-size: cover;
 }
 .main {
   min-height: 100vh;

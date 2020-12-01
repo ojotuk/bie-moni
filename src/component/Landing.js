@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header/Header";
 import Hero from "./Hero";
 import styles from "../styles/Landing.module.css";
@@ -8,11 +8,37 @@ import overlap1 from "../img/img_overlap.jpg";
 import pattern from "../img/pattern.webp";
 import powerlines from "../img/powerlines.svg";
 import road from "../img/road.png";
+import faq from "../img/faq.jpg";
 import Services from "./Services";
 import Footer from "./Footer";
 import { Fade, Slide, Zoom } from "react-reveal";
+import Clients from "./Clients";
 
 const Landing = () => {
+  const [show, setShow] = useState(" ");
+  const [details, setDetails] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    serviceType: [],
+    additionalDetails: "",
+  });
+  const handleInputs = (e) => {
+    let name = e.target.name;
+    let value = e.target.value;
+    let prev = details;
+    prev[name] = value;
+    setDetails({ ...details });
+  };
+  const scrollPositionHandler = () => {
+    // console.log(window.scrollY);
+    if (window.scrollY > window.innerHeight / 2) {
+      setShow("scrollTopShow");
+    } else {
+      setShow(" ");
+    }
+  };
+  window.addEventListener("scroll", scrollPositionHandler);
   return (
     <section className="main">
       <section className="header-section">
@@ -164,10 +190,75 @@ const Landing = () => {
       </section>
       {/* INBEtween */}
       <section className={styles.featured}></section>
+      <section className={styles.faqSection}>
+        <div className={styles.container + " container"}>
+          <div className={styles.imgWrapper}>
+            <img src={faq} alt="faq" />
+          </div>
+          <div className={styles.faqWrapper}>
+            <div className={styles.content}>
+              <h4>Get in Touch</h4>
+              <p>
+                Cras ultricies ligula sed magna dictum porta. Sed porttitor
+                lectus nibh. Proin eget tortor risus.
+              </p>
+              <div className={styles.inputs} onChange={(e) => handleInputs(e)}>
+                <input
+                  type="text"
+                  placeholder="Name"
+                  name="name"
+                  value={details.name}
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  name="email"
+                  value={details.email}
+                />
+                <input
+                  type="phone"
+                  placeholder="Phone"
+                  name="phone"
+                  value={details.phone}
+                />
+                <select value={details.serviceType} name="serviceType">
+                  <option value={null}>Select services</option>
+                  <option value="Road Construction">Road Construction</option>
+                  <option value="Building Construction">
+                    Building Construction
+                  </option>
+                  <option value="Structural Design">Structural Design</option>
+                  <option value="Land Scaping">Land Scaping</option>
+                </select>
+              </div>
+              <div className={styles.selectedWrapper}></div>
+              {/* <div> */}
+              <textarea
+                placeholder="Additional details"
+                value={details.additionalDetails}
+                name="additionaDetails"
+              ></textarea>
+              {/* </div> */}
+              <button className="btn d-block">Submit Request</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* clients */}
+      <section className={styles.clientSection}>
+        <div className={styles.container + " container"}>
+          <h4 className={styles.title}>Cleints</h4>
+          <Clients />
+        </div>
+      </section>
       {/* FOOTER */}
       <section className={styles.footerSection}>
         <Footer />
       </section>
+
+      <a href="/#" className={styles.scrollTop + " " + styles[show]}>
+        <i className=" fa fa-arrow-up"></i>
+      </a>
     </section>
   );
 };
