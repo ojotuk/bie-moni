@@ -1,11 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import styles from "../styles/Services.module.css";
-import { Link } from "react-router-dom";
-import { mouseHover } from "./Animate";
-import service_1 from "../img/service1.jpg";
-import borehole from "../img/borehole.jpg";
+
 //
 import icon_3 from "../img/icon_service_3.png";
 import icon_2 from "../img/icon_service_2.png";
@@ -13,7 +10,7 @@ import icon_1 from "../img/icon_service_1.png";
 import icon_4 from "../img/icon_service_4.png";
 
 import bonny_lga from "../img/bonny_lga.png";
-import { useRef } from "react";
+// import { useRef } from "react";
 
 const responsive = {
   desktop: {
