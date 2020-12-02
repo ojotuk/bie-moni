@@ -645,7 +645,7 @@ main {
 }
 
 .featuredProjects {
-  padding: 10rem 0;
+  padding: 10rem 0 7rem 0;
   width: 100%;
   background-color: #f3f3f3;
 }
@@ -749,6 +749,9 @@ main {
   }
   .aboutUsSection .container .row .containerRight .wrapper .content {
     padding: 4rem 2rem 0rem 2rem;
+  }
+  .featuredProjects .container .wrapper {
+    padding: 0 1rem;
   }
   .intersection .container {
     -webkit-box-orient: vertical;

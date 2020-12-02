@@ -447,7 +447,7 @@
 .header .nav .bottomBar .drop-open .expand-companys {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  height: 35rem;
+  height: 17rem;
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
   max-height: fit-content;
