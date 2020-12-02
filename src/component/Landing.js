@@ -14,6 +14,7 @@ import { Fade, Slide, Zoom } from "react-reveal";
 import Clients from "./Clients";
 import * as contentful from "contentful";
 import { USER } from "../contentful";
+import { projects } from "./Projects";
 
 // import { Link } from "react-router-dom";
 import logo from "../img/bnml.PNG";
@@ -151,7 +152,10 @@ const Landing = () => {
       {/* core value */}
       <section className={styles.coresSection} id="cores">
         <div className={styles.container + " container"}>
-          <h4>Core Values</h4>
+          <Zoom>
+            {" "}
+            <h4>Core Values</h4>
+          </Zoom>
           <h3>
             Our customers’ projects are an investment in the{" "}
             <span>future...</span>
@@ -223,6 +227,27 @@ const Landing = () => {
         </div>
       </section>
       {/* service section ends */}
+      {/* Projects */}
+      <section className={styles.featuredProjects} id="projects">
+        <div className={styles.container + " container"}>
+          <div className={styles.wrapper}>
+            <Zoom>
+              <h4>Previous Projects</h4>
+            </Zoom>
+            <div className="row">
+              {projects.map((project, index) => (
+                <Fade down>
+                  <div className={styles.cols + " col-lg-4"} key={index}>
+                    <h6>{project.title}</h6>
+                    <p>{project.location}</p>
+                    <div></div>
+                  </div>
+                </Fade>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
       <section className={styles.intersection}>
         <div className={styles.container + " container"}>
           <span>LOOKING FOR AN ADEQUATE SOLUTION FOR YOUR PROJECT ?</span>
@@ -236,8 +261,7 @@ const Landing = () => {
           </div>
         </div>
       </section>
-      {/* INBEtween */}
-      <section className={styles.featured}></section>
+
       <section className={styles.faqSection}>
         <div className={styles.container + " container"}>
           <div className={styles.imgWrapper}>

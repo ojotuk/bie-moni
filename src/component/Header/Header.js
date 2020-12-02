@@ -215,10 +215,10 @@ const Header = () => {
                   </ul>
                 </li>
                 <li className={"mainNavLink"}>
-                  <NavLink to="#">
+                  <a href="/#projects">
                     Projects
                     {/* <i className="fa fa-chevron-down"></i> */}
-                  </NavLink>
+                  </a>
                 </li>
                 <li className={"mainNavLink"}>
                   <a href="/#contact">Contact Us</a>
