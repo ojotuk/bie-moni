@@ -35,7 +35,9 @@ const Landing = () => {
     accessToken: USER.ACCESS,
   });
 
-  const getProfile = () => {
+  // const getProfile = () => {};
+  useEffect(() => {
+    // getProfile();
     client
       .getEntries({
         content_type: "bieMoni",
@@ -45,10 +47,7 @@ const Landing = () => {
           setProfile(items.items[0].fields.profileBieMoni.fields.file.url)
         // console.log(items)
       );
-  };
-  useEffect(() => {
-    getProfile();
-  }, []);
+  }, [client]);
   //contentful ends
 
   const handleInputs = (e) => {

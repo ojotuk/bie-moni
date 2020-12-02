@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import styles from "../styles/Services.module.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { mouseHover } from "./Animate";
 import service_1 from "../img/service1.jpg";
 import borehole from "../img/borehole.jpg";
