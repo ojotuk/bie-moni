@@ -40,7 +40,7 @@ const responsive = {
 const descriptionSlide = [
   {
     paragraph:
-      "Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus.",
+      "The company has the man power to execute commercial, industrial & residential roads projects, asphalt & concrete paving constuction.",
     link: "/",
     type: "Road Construction",
     img: road_construction,
@@ -58,7 +58,7 @@ const descriptionSlide = [
   },
   {
     paragraph:
-      "Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus.",
+      "Our design professionals are equipped to help determine the design that work best for our customers.",
     link: "/",
     type: "Structural Works",
     img: Structural_Design,
@@ -67,7 +67,7 @@ const descriptionSlide = [
   },
   {
     paragraph:
-      "Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus.",
+      "Our company has consistently embraced innovation to provive a superior level of excellence. Build your dream house and offices with US",
     link: "/",
     type: "Building Construction",
     img: service_1,
@@ -76,7 +76,7 @@ const descriptionSlide = [
   },
   {
     paragraph:
-      "Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus.",
+      "Our water design system are assembled with precision to produce safe drinking/portable water",
     link: "/",
     type: "Boreholes & Water Installation",
     img: borehole,
@@ -85,7 +85,7 @@ const descriptionSlide = [
   },
   {
     paragraph:
-      "Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus.",
+      "Bie-Moni offers a wide variety of electrical services. Our brand are known for quality installation and supplies to serve your electrification needs",
     link: "/",
     type: "Transformer Installations",
     img: transformer,
@@ -94,7 +94,7 @@ const descriptionSlide = [
   },
   {
     paragraph:
-      "Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus.",
+      "Bie-Moni offers a wide variety of electrical services. Our brand are known for quality installation and supplies to serve your electrification needs",
     link: "/",
     type: "Power Line Installation",
     img: powerlines,
@@ -103,7 +103,7 @@ const descriptionSlide = [
   },
   {
     paragraph:
-      "Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus.",
+      " Bie-Moni offers a wide variety of electrical services. Our brand are known for quality installation and supplies to serve your electrification needs.",
     link: "/",
     type: "Electrical Supplies & Installation",
     img: elect_supplies,
@@ -111,8 +111,7 @@ const descriptionSlide = [
     id: 8,
   },
   {
-    paragraph:
-      "Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus.",
+    paragraph: "We engage in supplies of general materials for welding",
     link: "/",
     type: "Welding equipment/materials",
     img: welding,
@@ -129,9 +128,9 @@ const ReadMore = ({ paragraph }) => {
   return (
     <div className={styles.cardUpDrop} ref={(el) => (elem = el)}>
       <p>{paragraph}</p>
-      <Link to="/">
+      {/* <Link to="/">
         Read more <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-      </Link>
+      </Link> */}
     </div>
   );
 };

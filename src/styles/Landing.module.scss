@@ -197,7 +197,7 @@ main {
     h4 {
       color: $primaryRed;
       font-weight: 700;
-      font-size: 1.8rem;
+      font-size: 2.4rem;
       letter-spacing: 0.1rem;
       // width: 60rem;
       // max-width: 90vw;
@@ -208,7 +208,7 @@ main {
     }
     h3 {
       color: #f7f7f7;
-      font-size: 3.6rem;
+      font-size: 1.8rem;
       margin: 1.5rem 0;
       margin-bottom: 4rem;
       font-weight: 400;
@@ -276,7 +276,7 @@ main {
     z-index: 10;
     position: relative;
     h4 {
-      font-size: 1.8rem;
+      font-size: 2.4rem;
       color: $primaryRed;
       font-weight: 600;
       letter-spacing: 0.09rem;
@@ -284,7 +284,7 @@ main {
       padding-left: 0.5rem;
       border-left: 0.5rem solid #ffffff;
     }
-    h3 {
+    .description {
       font-size: 1.6rem;
       margin: 1.5rem;
       // color: rgba($color: $primaryBlue, $alpha: 0.4);
@@ -296,7 +296,7 @@ main {
       max-width: 90vw;
     }
     div {
-      font-size: 3.6rem;
+      font-size: 1.8rem;
       text-align: center;
       color: #f3f3f3;
       font-weight: 200;
@@ -365,7 +365,7 @@ main {
       text-align: center;
     }
     .ctaWrapper {
-      background-color: $primaryYellow;
+      background-color: $primaryRed;
       height: 5rem;
       width: 15rem;
       position: relative;
@@ -411,7 +411,7 @@ main {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     .imgWrapper {
-      flex: 1;
+      width: 100%;
       // display: flex;
       img {
         max-width: 100%;
@@ -419,31 +419,35 @@ main {
     }
     .faqWrapper {
       // background-color: blue;
-      flex: 1;
+      width: 100%;
       padding-left: 2rem;
       .content {
         font-size: 1.6rem;
         // background-color: #eb1c24;
         padding: 3rem;
         box-shadow: 0.1rem 0.1rem 0.4rem 0 rgba($color: #000000, $alpha: 0.3);
+        width: 100%;
         h4 {
           font-size: 1.8rem;
           font-weight: 700;
         }
         p {
           color: #888888;
-          margin: 1rem 0;
+          margin: 2rem 0;
+          font-size: 1.4rem;
         }
         .inputs {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           gap: 1.5rem;
+          width: 100%;
           input,
           select {
             outline: none;
             padding: 1rem 1.5rem;
             border: 0.1rem solid $bodyTextColorGrey;
-            display: flex;
+            // display: flex;
+            width: 100%;
           }
         }
         textarea {
@@ -457,11 +461,20 @@ main {
           border: 0.1rem solid #888888;
         }
         button {
-          background-color: $primaryRed;
+          background: $primaryRed;
           display: flex;
           width: 100%;
           font-size: 1.6rem;
           color: white;
+          margin: 1.5rem 0;
+          transition: 0.3s;
+          &:hover {
+            background: linear-gradient(
+              to right,
+              $primaryBlue,
+              rgba($color: #1b2a6d, $alpha: 0.9)
+            );
+          }
         }
       }
     }
@@ -477,7 +490,7 @@ main {
     flex-direction: column;
     // align-items: center;
     .title {
-      font-size: 1.8rem;
+      font-size: 2.4rem;
       text-align: center;
       border-left: 0.5rem solid $primaryBlue;
       width: fit-content;
@@ -588,10 +601,17 @@ main {
         font-size: 1.8rem;
       }
       div {
-        font-size: 3rem;
+        font-size: 1.6rem;
       }
     }
   }
+  // .clientSection {
+  //   .container {
+  //     .title {
+  //       font-size: 1.8rem;
+  //     }
+  //   }
+  // }
 }
 @media screen and (max-width: 767px) {
   .coresSection .container {

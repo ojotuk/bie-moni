@@ -68,6 +68,18 @@ const Footer = () => {
                   <span>Branch Office:</span> Plot 10A Peter Odili Road,
                   Trans-Amadi, Port Harcourt, River State, Nigeria.
                 </p>
+                <p>
+                  <span>
+                    <i className="fa fa-phone"></i>
+                  </span>{" "}
+                  +2348033100730
+                </p>
+                <p>
+                  <span>
+                    <i className="fa fa-envelope"></i>
+                  </span>{" "}
+                  info@bie-moni.com
+                </p>
               </div>
             </div>
           </Fade>
@@ -77,7 +89,13 @@ const Footer = () => {
       <div className={styles.copyright}>
         Copyrights {today.getFullYear()}.
         <span>
-          <a href="https://cloud10.com.ng">Cloud10 Tech Hub</a>
+          <a
+            href="https://cloud10techhub.com.ng"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Cloud10 Tech Hub
+          </a>
         </span>
       </div>
     </div>

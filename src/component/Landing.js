@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "./Header/Header";
 import Hero from "./Hero";
 import styles from "../styles/Landing.module.css";
@@ -12,24 +12,54 @@ import Services from "./Services";
 import Footer from "./Footer";
 import { Fade, Slide, Zoom } from "react-reveal";
 import Clients from "./Clients";
+import * as contentful from "contentful";
+import { USER } from "../contentful";
+
 // import { Link } from "react-router-dom";
 import logo from "../img/bnml.PNG";
 
 const Landing = () => {
   const [show, setShow] = useState(" ");
+  const [profile, setProfile] = useState(" ");
   const [details, setDetails] = useState({
     name: "",
     email: "",
     phone: "",
-    serviceType: [],
+    serviceType: "",
     additionalDetails: "",
   });
+
+  //contentful
+  const client = contentful.createClient({
+    space: USER.space,
+    accessToken: USER.ACCESS,
+  });
+
+  const getProfile = () => {
+    client
+      .getEntries({
+        content_type: "bieMoni",
+      })
+      .then(
+        (items) =>
+          setProfile(items.items[0].fields.profileBieMoni.fields.file.url)
+        // console.log(items)
+      );
+  };
+  useEffect(() => {
+    getProfile();
+  }, []);
+  //contentful ends
+
   const handleInputs = (e) => {
     let name = e.target.name;
     let value = e.target.value;
     let prev = details;
     prev[name] = value;
     setDetails({ ...details });
+  };
+  const handleTextArea = (e) => {
+    setDetails({ ...details, additionalDetails: e.target.value });
   };
   const scrollPositionHandler = () => {
     // console.log(window.scrollY);
@@ -96,11 +126,17 @@ const Landing = () => {
                     </p>
                     <p className="mt-0">
                       With state of the art equipment and support facilities,
-                      we've executed several project across the country.
+                      we've executed several project across the country. We are
+                      have professionals for your dream project.
                     </p>
                     <div className={styles.ctaWrapper}>
                       <div className={styles.cta}>
-                        <a download href="/" target="_blank">
+                        <a
+                          download
+                          href={`https://${profile}`}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           Our Profile<i className="fa fa-download"></i>
                         </a>
                       </div>
@@ -141,10 +177,10 @@ const Landing = () => {
             <Zoom>
               <h4>Our Services</h4>
             </Zoom>
-            <h3>
+            <p className={styles.description}>
               We Provide High Quality Electrical and Civil Construction
               Solutions For Residentials & Industries!
-            </h3>
+            </p>
             <div>Whats Our Offers</div>
             <span></span>
           </div>
@@ -192,9 +228,11 @@ const Landing = () => {
         <div className={styles.container + " container"}>
           <span>LOOKING FOR AN ADEQUATE SOLUTION FOR YOUR PROJECT ?</span>
           <div className={styles.ctaWrapper}>
-            <div>
-              Reach Out <i className="fa fa-comment ml-2"></i>
-            </div>
+            <a href="https://wa.me/2348033100730" rel="noreferrer">
+              <div>
+                Reach Out <i className="fa fa-whatsapp ml-2"></i>
+              </div>
+            </a>
             <span></span>
           </div>
         </div>
@@ -208,10 +246,11 @@ const Landing = () => {
           </div>
           <div className={styles.faqWrapper}>
             <div className={styles.content}>
-              <h4>Get in Touch</h4>
+              <h4>Get In Touch</h4>
               <p>
-                Cras ultricies ligula sed magna dictum porta. Sed porttitor
-                lectus nibh. Proin eget tortor risus.
+                Complete control over products allows us to ensure our clients
+                receive the best quality prices and service. We take great pride
+                in everything that we do in our company.
               </p>
               <div className={styles.inputs} onChange={(e) => handleInputs(e)}>
                 <input
@@ -229,20 +268,33 @@ const Landing = () => {
                   autoComplete="off"
                 />
                 <input
-                  type="phone"
+                  type="number"
                   placeholder="Phone"
                   name="phone"
                   value={details.phone}
                   autoComplete="off"
+                  step={false}
                 />
                 <select value={details.serviceType} name="serviceType">
                   <option value={null}>Select services</option>
-                  <option value="Road Construction">Road Construction</option>
+                  <option value="Borehole/Water Installation">
+                    Borehole/Water Installation
+                  </option>
                   <option value="Building Construction">
                     Building Construction
                   </option>
-                  <option value="Structural Design">Structural Design</option>
+                  <option value="Drainage">Drainage</option>
+                  <option value="General Electrical Supplies Controls System">
+                    Electrical Installation/Supplies/Control System
+                  </option>
                   <option value="Land Scaping">Land Scaping</option>
+                  <option value="Structural Design">Structural Design</option>
+                  <option value="Transformer/Powerline">
+                    Transformer/Power line Installation
+                  </option>
+                  <option value="Welding Equipment/Materials">
+                    Welding Equipment/Materials
+                  </option>
                 </select>
               </div>
               <div className={styles.selectedWrapper}></div>
@@ -252,6 +304,7 @@ const Landing = () => {
                 value={details.additionalDetails}
                 name="additionaDetails"
                 autoComplete="off"
+                onChange={(e) => handleTextArea(e)}
               ></textarea>
               {/* </div> */}
               <button className="btn d-block">Submit Request</button>

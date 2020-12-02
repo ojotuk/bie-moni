@@ -10,8 +10,10 @@ import {
   fromRight,
   bottomRightBox,
 } from "./Animate";
-import slide01 from "../img/slider-3.jpg";
-import slide02 from "../img/02.jpg";
+// import slide01 from "../img/slider-3.jpg";
+import slide01 from "../img/slidebg_3.jpg";
+// import slide02 from "../img/02.jpg";
+import slide02 from "../img/slidebg_4.jpg";
 
 const responsive = {
   desktop: {
@@ -48,6 +50,23 @@ const descriptionSlide = [
     span: "Bie-Moni",
     id: 2,
   },
+  // {
+  //   paragraph: "We are professional for your dream project",
+  //   link: "/",
+  //   name: styles.slide_1,
+  //   caption: "Nig Ltd",
+  //   span: "Bie-Moni",
+  //   id: 3,
+  // },
+  // {
+  //   paragraph:
+  //     "Technology to take products from  an idea all the way to the end consumer.",
+  //   link: "/",
+  //   name: styles.slide_2,
+  //   caption: "Driven",
+  //   span: "Technology",
+  //   id: 4,
+  // },
 ];
 
 const ContentOne = ({ slide }) => {

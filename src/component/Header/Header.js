@@ -169,7 +169,7 @@ const Header = () => {
                       <i className="fa fa-chevron-right"></i>
                       <a href="/#cores">Core values</a>
                     </li>
-                    <li className={"dropDownItem"}>
+                    {/* <li className={"dropDownItem"}>
                       <i className="fa fa-chevron-right"></i>
                       <NavLink to="#">Managing Team</NavLink>
                     </li>
@@ -184,7 +184,7 @@ const Header = () => {
                     <li className={"dropDownItem"}>
                       <i className="fa fa-chevron-right"></i>
                       <NavLink to="#">Career</NavLink>
-                    </li>
+                    </li> */}
                   </ul>
                 </li>
                 <li
@@ -216,7 +216,8 @@ const Header = () => {
                 </li>
                 <li className={"mainNavLink"}>
                   <NavLink to="#">
-                    Projects<i className="fa fa-chevron-down"></i>
+                    Projects
+                    {/* <i className="fa fa-chevron-down"></i> */}
                   </NavLink>
                 </li>
                 <li className={"mainNavLink"}>
