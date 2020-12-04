@@ -49,6 +49,11 @@ const Header = () => {
     setOpen(!open);
     navElement.current.classList.toggle("drop-open");
   };
+  const mobileNavClickHandler = () => {
+    if (screenSizeChange < 992) {
+      // handleToggle();
+    } else return null;
+  };
   const expandHandler = (element) => {
     if (element === "companys") {
       dropElement1.current.classList.toggle("expand-companys");
@@ -161,11 +166,17 @@ const Header = () => {
                   </NavLink>
                   {/* dropdown */}
                   <ul className={"dropDown"}>
-                    <li className={"dropDownItem"}>
+                    <li
+                      className={"dropDownItem"}
+                      onClick={mobileNavClickHandler}
+                    >
                       <i className="fa fa-chevron-right"></i>
                       <a href="/#about">About</a>
                     </li>
-                    <li className={"dropDownItem"}>
+                    <li
+                      className={"dropDownItem"}
+                      onClick={mobileNavClickHandler}
+                    >
                       <i className="fa fa-chevron-right"></i>
                       <a href="/#cores">Core values</a>
                     </li>
@@ -204,23 +215,29 @@ const Header = () => {
                   </NavLink>
                   {/* dropdown */}
                   <ul className={"dropDown"}>
-                    <li className={"dropDownItem"}>
+                    <li
+                      className={"dropDownItem"}
+                      onClick={mobileNavClickHandler}
+                    >
                       <i className="fa fa-chevron-right"></i>
                       <a href="/#services">Electrification</a>
                     </li>
-                    <li className={"dropDownItem"}>
+                    <li
+                      className={"dropDownItem"}
+                      onClick={mobileNavClickHandler}
+                    >
                       <i className="fa fa-chevron-right"></i>
                       <a href="/#services">Civil Construction</a>
                     </li>
                   </ul>
                 </li>
-                <li className={"mainNavLink"}>
+                <li className={"mainNavLink"} onClick={mobileNavClickHandler}>
                   <a href="/#projects">
                     Projects
                     {/* <i className="fa fa-chevron-down"></i> */}
                   </a>
                 </li>
-                <li className={"mainNavLink"}>
+                <li className={"mainNavLink"} onClick={mobileNavClickHandler}>
                   <a href="/#contact">Contact Us</a>
                 </li>
                 {/* <li className={"mainNavLink"}>
