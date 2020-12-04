@@ -1,9 +1,11 @@
-$primaryBlue: #1b2a6d;
-$primaryRed: #eb1c24;
+$primaryBlue: #193563;
+$primaryRed: #ef474b;
 $primaryYellow: #db7e01;
 $bodyTextColor: #5166a7;
 $mainLinkTextSize: 1.6rem;
 $bodyTextSize: 1.6rem;
+$headingFont: "Playfair Display", serif;
+$bodyFont: "Montserrat", sans-serif;
 
 .header {
   background: linear-gradient(
@@ -126,12 +128,16 @@ $bodyTextSize: 1.6rem;
             line-height: 2.5rem;
             color: $primaryRed;
             letter-spacing: 0.1rem;
+            font-family: $headingFont;
+            font-weight: 900;
           }
           & span:last-child {
             font-size: 1.6rem;
             color: white;
             font-weight: 700;
             letter-spacing: 0.1rem;
+            font-family: $headingFont;
+            font-weight: 900;
           }
         }
       }

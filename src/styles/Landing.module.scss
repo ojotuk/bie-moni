@@ -1,5 +1,5 @@
-$primaryBlue: #1b2a6d;
-$primaryRed: #eb1c24;
+$primaryBlue: #193563;
+$primaryRed: #ef474b;
 $primaryYellow: #db7e01;
 $bodyTextColorBlue: #5166a7;
 $bodyTextColorGrey: #888888;
@@ -7,6 +7,8 @@ $mainLinkTextSize: 1.6rem;
 $bodyTextSize: 1.6rem;
 $fontFamliyTitle: "Open Sans", sans-serif;
 $fontFamliyText: "Poppins", sans-serif;
+$headingFont: "Playfair Display", serif;
+$bodyFont: "Montserrat", sans-serif;
 
 main {
   min-height: 100vh;
@@ -68,6 +70,7 @@ main {
           text-align: left;
           text-indent: 0px;
           z-index: 50;
+          font-family: $headingFont;
         }
         .overlap1 {
           position: absolute;
@@ -112,11 +115,11 @@ main {
             padding: 4rem 6rem;
             padding-top: 12rem;
             h2 {
-              font-size: 2.4rem;
+              font-size: 3.6rem;
+              font-family: $headingFont;
               span {
                 color: $primaryRed;
               }
-              font-family: "Open Sans" serif;
             }
             p {
               font-size: 1.4rem;
@@ -204,7 +207,7 @@ main {
       text-align: center;
       padding-left: 0.5rem;
       border-left: 0.5rem solid white;
-      font-family: "Open Sans" sans-serif !important;
+      font-family: $headingFont;
     }
     h3 {
       color: #f7f7f7;
@@ -283,6 +286,7 @@ main {
       text-align: center;
       padding-left: 0.5rem;
       border-left: 0.5rem solid #ffffff;
+      font-family: $headingFont;
     }
     .description {
       font-size: 1.6rem;
@@ -334,6 +338,7 @@ main {
       li {
         padding: 1rem;
         color: white;
+        transition: 0.3s;
         i {
           background-color: $primaryRed;
           border-radius: 50%;
@@ -341,6 +346,13 @@ main {
           padding: 0.5rem;
           margin-right: 1rem;
           font-size: 1.4rem;
+        }
+        img {
+          width: 4rem;
+          margin-right: 1rem;
+        }
+        &:hover {
+          transform: scale(1.05);
         }
       }
     }
@@ -499,6 +511,7 @@ main {
       color: $primaryRed;
       font-weight: 600;
       margin-bottom: 3rem;
+      font-family: $headingFont;
     }
   }
 }
@@ -518,7 +531,7 @@ main {
         font-size: 1.6rem;
         transition: 0.3s;
         a {
-          color: #eb1c24;
+          color: $primaryRed;
           padding: 1.5rem;
           font-size: 1.8rem;
         }
@@ -552,6 +565,8 @@ main {
         border-left: 0.5rem solid $primaryBlue;
         padding-left: 1rem;
         color: $primaryRed;
+        font-family: $headingFont;
+        font-weight: 600;
       }
       .cols {
         // background-color: red;
@@ -582,15 +597,16 @@ main {
   }
 }
 .scrollTop {
-  background-color: #1b2a6d;
+  background-color: rgba($color: #1b2a6d, $alpha: 0.7);
   position: fixed;
   right: -50rem;
   bottom: 2rem;
-  padding: 1rem;
-  font-size: 2.4rem;
-  color: #eb1c24;
+  padding: 1rem 1.5rem;
+  font-size: 1.8rem;
+  color: white;
   z-index: 100;
   transition: all 0.3s;
+  border-radius: 50%;
   &:hover {
     color: white;
   }
@@ -616,6 +632,7 @@ main {
           }
           .nonOverlap {
             width: 100%;
+            height: 100vw;
           }
         }
         .containerRight {

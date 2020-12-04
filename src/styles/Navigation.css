@@ -54,7 +54,7 @@
 }
 
 .header .nav .topBar .topWrapper .ulTopLeft .ulTopLeftItem i {
-  color: #eb1c24;
+  color: #ef474b;
   margin-right: 1.5rem;
   font-size: 1.6rem;
 }
@@ -65,7 +65,7 @@
 }
 
 .header .nav .topBar .topWrapper .ulTopLeft .ulTopLeftItem:hover a {
-  color: #eb1c24;
+  color: #ef474b;
 }
 
 .header .nav .topBar .topWrapper .ulTopRight {
@@ -105,7 +105,7 @@
 }
 
 .header .nav .topBar .topWrapper .ulTopRight .ulTopRightItem:hover i {
-  color: #eb1c24;
+  color: #ef474b;
 }
 
 .header .nav .bottomBar {
@@ -167,8 +167,10 @@
 .header .nav .bottomBar .brand .brand-name-wrapper span:first-child {
   font-size: 3rem;
   line-height: 2.5rem;
-  color: #eb1c24;
+  color: #ef474b;
   letter-spacing: 0.1rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
 }
 
 .header .nav .bottomBar .brand .brand-name-wrapper span:last-child {
@@ -176,6 +178,8 @@
   color: white;
   font-weight: 700;
   letter-spacing: 0.1rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
 }
 
 .header .nav .bottomBar .navToggler {
@@ -184,7 +188,7 @@
   width: 4rem;
   height: 4rem;
   color: black;
-  border: 0.1rem solid #eb1c24;
+  border: 0.1rem solid #ef474b;
   position: relative;
   padding: 0.5rem 1rem;
 }
@@ -192,7 +196,7 @@
 .header .nav .bottomBar .navToggler .bar {
   height: 0.3rem;
   width: 3rem;
-  background-color: #1b2a6d;
+  background-color: #193563;
   -ms-grid-column-align: center;
       justify-self: center;
   position: absolute;
@@ -224,7 +228,7 @@
   display: block;
   position: absolute;
   top: -1rem;
-  background-color: #eb1c24;
+  background-color: #ef474b;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -301,11 +305,11 @@
 }
 
 .header .nav .bottomBar .large-screen-navigation .mainNavLink:hover a {
-  color: #eb1c24;
+  color: #ef474b;
 }
 
 .header .nav .bottomBar .large-screen-navigation .mainNavLink:hover a::after {
-  background-color: #eb1c24;
+  background-color: #ef474b;
   width: 100%;
 }
 
@@ -362,7 +366,7 @@
 }
 
 .header .nav .bottomBar .large-screen-navigation .mainNavLink:hover .dropDown .dropDownItem a:hover {
-  color: #1b2a6d;
+  color: #193563;
 }
 
 .header .nav .bottomBar .large-screen-navigation .mainNavLink:hover .dropDown .dropDownItem i {
@@ -378,7 +382,7 @@
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.4rem;
-  color: #eb1c24;
+  color: #ef474b;
 }
 
 .header .nav .bottomBar .large-screen-navigation .mainNavLink:hover .dropDown .dropDownItem:hover i {
@@ -391,7 +395,7 @@
   left: 0;
   max-height: 0;
   overflow: hidden;
-  background-color: #1b2a6d;
+  background-color: #193563;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   opacity: 0;

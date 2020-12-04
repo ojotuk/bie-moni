@@ -57,25 +57,25 @@
 
 .slideDescription > .content .wrapper h2,
 .slideDescription2 > .content .wrapper h2 {
-  font-size: 5rem;
+  font-size: 6.2rem;
   font-weight: 900;
-  color: #1b2a6d;
+  color: white;
   text-transform: capitalize;
   letter-spacing: 0.1rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Playfair Display", serif;
   outline: 1px;
   text-transform: uppercase;
 }
 
 .slideDescription > .content .wrapper h2 span,
 .slideDescription2 > .content .wrapper h2 span {
-  color: #eb1c24;
+  color: white;
 }
 
 .slideDescription > .content .wrapper p,
 .slideDescription2 > .content .wrapper p {
-  font-size: 1.8rem;
-  margin: 2rem 0;
+  font-size: 2.4rem;
+  margin: 3rem 0;
 }
 
 .slideDescription > .content .wrapper .ctaContainer,
@@ -90,8 +90,8 @@
 
 .slideDescription > .content .wrapper .ctaContainer .ctaWrapper1,
 .slideDescription2 > .content .wrapper .ctaContainer .ctaWrapper1 {
-  background-color: #eb1c24;
-  width: 15rem;
+  background-color: #ef474b;
+  width: 17rem;
   height: 5rem;
   position: relative;
   border-radius: 0.4rem;
@@ -111,6 +111,16 @@
   font-size: 1.6rem;
   width: 100%;
   text-align: center;
+}
+
+.slideDescription > .content .wrapper .ctaContainer .ctaWrapper1 .aboutUsBtn i,
+.slideDescription2 > .content .wrapper .ctaContainer .ctaWrapper1 .aboutUsBtn i {
+  visibility: hidden;
+  position: absolute;
+  right: 2rem;
+  top: 20%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .slideDescription > .content .wrapper .ctaContainer .ctaWrapper1 .colorSlide,
@@ -136,10 +146,16 @@
   color: #121212;
 }
 
+.slideDescription > .content .wrapper .ctaContainer .ctaWrapper1:hover .aboutUsBtn i,
+.slideDescription2 > .content .wrapper .ctaContainer .ctaWrapper1:hover .aboutUsBtn i {
+  visibility: visible;
+  right: 1rem;
+}
+
 .slideDescription > .content .wrapper .ctaContainer .ctaWrapper2,
 .slideDescription2 > .content .wrapper .ctaContainer .ctaWrapper2 {
   background-color: #f7f7f7;
-  width: 15rem;
+  width: 17rem;
   height: 5rem;
   position: relative;
   border-radius: 0.4rem;
@@ -161,6 +177,16 @@
   letter-spacing: 0.1rem;
 }
 
+.slideDescription > .content .wrapper .ctaContainer .ctaWrapper2 .aboutUsBtn i,
+.slideDescription2 > .content .wrapper .ctaContainer .ctaWrapper2 .aboutUsBtn i {
+  visibility: hidden;
+  position: absolute;
+  right: 2rem;
+  top: 20%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .slideDescription > .content .wrapper .ctaContainer .ctaWrapper2 .colorSlide,
 .slideDescription2 > .content .wrapper .ctaContainer .ctaWrapper2 .colorSlide {
   position: absolute;
@@ -170,7 +196,7 @@
   height: 100%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  background-color: #1b2a6d;
+  background-color: #193563;
   border-radius: 0.4rem;
 }
 
@@ -182,6 +208,12 @@
 .slideDescription > .content .wrapper .ctaContainer .ctaWrapper2:hover .aboutUsBtn,
 .slideDescription2 > .content .wrapper .ctaContainer .ctaWrapper2:hover .aboutUsBtn {
   color: white;
+}
+
+.slideDescription > .content .wrapper .ctaContainer .ctaWrapper2:hover .aboutUsBtn i,
+.slideDescription2 > .content .wrapper .ctaContainer .ctaWrapper2:hover .aboutUsBtn i {
+  visibility: visible;
+  right: 1rem;
 }
 
 .slideDescription > .content .wrapper .wrapperBoxTopLeft,
@@ -236,11 +268,11 @@
 @media screen and (max-width: 500px) {
   .slideDescription > .content .wrapper h2,
   .slideDescription2 > .content .wrapper h2 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .slideDescription > .content .wrapper p,
   .slideDescription2 > .content .wrapper p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .slideDescription > .content .wrapper .wrapperBoxTopLeft,
   .slideDescription > .content .wrapper .wrapperBoxBottomRight,

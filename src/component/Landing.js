@@ -6,6 +6,14 @@ import about1 from "../img/about_1.jpg";
 import overlap1 from "../img/img_overlap.jpg";
 import pattern from "../img/pattern.webp";
 import powerlines from "../img/powerlines.svg";
+import buildingIcon from "../img/building.svg";
+import roadIcon from "../img/road.svg";
+import designIcon from "../img/design.svg";
+import landscapeIcon from "../img/landscapeDesign.svg";
+import waterIcon from "../img/water.svg";
+import transformerIcon from "../img/transformer.svg";
+import welderIcon from "../img/welder.svg";
+import plugIcon from "../img/plug.svg";
 import road from "../img/road.png";
 import faq from "../img/faq.jpg";
 import Services from "./Services";
@@ -75,7 +83,9 @@ const Landing = () => {
       <section className="header-section" id="home">
         <Header />
       </section>
-      <Hero />
+      <section className="hero">
+        <Hero />
+      </section>
       {/* abouts us starts */}
       <section className={styles.aboutUsSection} id="about">
         <div className={styles.patternDiv}>
@@ -178,7 +188,7 @@ const Landing = () => {
         <div className="container" id="services">
           <div className={styles.caption}>
             <Zoom>
-              <h4>Our Services</h4>
+              <h4 data-attr="Our Services">Our Services</h4>
             </Zoom>
             <p className={styles.description}>
               We Provide High Quality Electrical and Civil Construction
@@ -192,34 +202,43 @@ const Landing = () => {
             <div className={styles.listDi + " mt-4"}>
               <ul className="row text-black">
                 <li className="col-lg-4">
-                  <i className="fa fa-check"></i>Road Construction
+                  <img src={roadIcon} alt="road icon" />
+                  Road Construction
                 </li>
                 <li className="col-lg-4">
-                  <i className="fa fa-check"></i>Landscape Designs
+                  <img src={landscapeIcon} alt="landscape design icon" />
+                  Landscape Designs
                 </li>
                 <li className="col-lg-4">
-                  <i className="fa fa-check"></i>Structural Works
+                  <img src={designIcon} alt="structural design" />
+                  Structural Works
                 </li>
                 <li className="col-lg-4">
-                  <i className="fa fa-check"></i>Building Construction
+                  <img src={buildingIcon} alt="building icon" />
+                  Building Construction
                 </li>
                 <li className="col-lg-4">
-                  <i className="fa fa-check"></i>Borehole Drilling &amp; Water
-                  Installation
+                  <img src={waterIcon} alt="borehole drilling" />
+                  Borehole Drilling &amp; Water Installation
                 </li>
                 <li className="col-lg-4">
-                  <i className="fa fa-check"></i>Transformer Installation
+                  <img src={transformerIcon} alt="transformer installation" />
+                  Transformer Installation
                 </li>
                 <li className="col-lg-4">
-                  <i className="fa fa-check"></i>Power Line Installation
+                  <img
+                    src={powerlines}
+                    alt="electrical powerline installation"
+                  />
+                  Power Line Installation
                 </li>
                 <li className="col-lg-4">
-                  <i className="fa fa-check"></i>General Electrical Supplies
-                  &amp; Installation
+                  <img src={plugIcon} alt="electrical supplies" />
+                  General Electrical Supplies &amp; Installation
                 </li>
                 <li className="col-lg-4">
-                  <i className="fa fa-check"></i>Supplies of Welding
-                  Equipment/Materials (consumables)
+                  <img src={welderIcon} alt="weldering" />
+                  Supplies of Welding Equipment/Materials (consumables)
                 </li>
               </ul>
             </div>

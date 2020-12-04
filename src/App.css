@@ -57,6 +57,38 @@
   max-height: 50vw;
 }
 
+.arrowDown {
+  position: absolute;
+  font-size: 3rem;
+  color: white;
+  bottom: 10rem;
+  right: 50%;
+  background-color: #1b2a6d;
+  height: 5rem;
+  /* width: 5rem; */
+  z-index: 10;
+}
+.arrowDown:hover {
+  color: #ef474b;
+}
+.arrowDown i {
+  position: absolute;
+  /* top: 2rem; */
+  animation-name: arrowDown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes arrowDown {
+  0% {
+    top: 3rem;
+    opacity: 1;
+  }
+  100% {
+    top: 5rem;
+    opacity: 0;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .fa-chevron-down {
     display: none;

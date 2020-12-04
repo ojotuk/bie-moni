@@ -14,6 +14,7 @@ import {
 import slide01 from "../img/slidebg_3.jpg";
 // import slide02 from "../img/02.jpg";
 import slide02 from "../img/slidebg_4.jpg";
+import { Link } from "react-router-dom";
 
 const responsive = {
   desktop: {
@@ -94,12 +95,20 @@ const ContentOne = ({ slide }) => {
             <div className={styles.ctaWrapper1}>
               <a className={styles.aboutUsBtn} href="/#about">
                 About Us
+                <i
+                  class="fa fa-arrow-circle-o-right ml-3"
+                  aria-hidden="true"
+                ></i>
               </a>
               <span className={styles.colorSlide}></span>
             </div>
             <div className={styles.ctaWrapper2}>
               <a className={styles.aboutUsBtn} href="/#services">
                 Our Services
+                <i
+                  class="fa fa-arrow-circle-o-right ml-3"
+                  aria-hidden="true"
+                ></i>
               </a>
               <span className={styles.colorSlide}></span>
             </div>
@@ -142,12 +151,20 @@ const ContentTwo = ({ slide }) => {
             <div className={styles.ctaWrapper1}>
               <a className={styles.aboutUsBtn} href="/#about">
                 About Us
+                <i
+                  class="fa fa-arrow-circle-o-right ml-3"
+                  aria-hidden="true"
+                ></i>
               </a>
               <span className={styles.colorSlide}></span>
             </div>
             <div className={styles.ctaWrapper2}>
               <a className={styles.aboutUsBtn} href="/#services">
                 Our Services
+                <i
+                  class="fa fa-arrow-circle-o-right ml-3"
+                  aria-hidden="true"
+                ></i>
               </a>
               <span className={styles.colorSlide}></span>
             </div>
@@ -210,6 +227,10 @@ const Hero = (props) => {
         ))}
       </Carousel>
       <div className="extra-div">{slider ? <SlideBg01 /> : <SlideBg02 />}</div>
+      {/* <Link></Link> */}
+      <a href="/#about" className="arrowDown">
+        <i className=" fa fa-long-arrow-down "></i>
+      </a>
     </>
   );
 };
