@@ -14,7 +14,7 @@ import {
 import slide01 from "../img/slidebg_3.jpg";
 // import slide02 from "../img/02.jpg";
 import slide02 from "../img/slidebg_4.jpg";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const responsive = {
   desktop: {
@@ -152,7 +152,7 @@ const ContentTwo = ({ slide }) => {
               <a className={styles.aboutUsBtn} href="/#about">
                 About Us
                 <i
-                  class="fa fa-arrow-circle-o-right ml-3"
+                  className="fa fa-arrow-circle-o-right ml-3"
                   aria-hidden="true"
                 ></i>
               </a>
@@ -162,7 +162,7 @@ const ContentTwo = ({ slide }) => {
               <a className={styles.aboutUsBtn} href="/#services">
                 Our Services
                 <i
-                  class="fa fa-arrow-circle-o-right ml-3"
+                  className="fa fa-arrow-circle-o-right ml-3"
                   aria-hidden="true"
                 ></i>
               </a>
