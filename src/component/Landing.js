@@ -255,7 +255,7 @@ const Landing = () => {
             </Zoom>
             <div className="row">
               {projects.map((project, index) => (
-                <Fade down>
+                <Fade down key={index}>
                   <div className={styles.cols + " col-lg-4"} key={index}>
                     <h6>{project.title}</h6>
                     <p>{project.location}</p>
@@ -349,7 +349,12 @@ const Landing = () => {
                 onChange={(e) => handleTextArea(e)}
               ></textarea>
               {/* </div> */}
-              <button className="btn d-block">Submit Request</button>
+              <button
+                className="btn d-block"
+                onClick={() => console.log(details)}
+              >
+                Submit Request
+              </button>
             </div>
           </div>
         </div>

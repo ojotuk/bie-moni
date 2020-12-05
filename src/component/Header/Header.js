@@ -51,7 +51,7 @@ const Header = () => {
   };
   const mobileNavClickHandler = () => {
     if (screenSizeChange < 992) {
-      // handleToggle();
+      return handleToggle();
     } else return null;
   };
   const expandHandler = (element) => {
@@ -133,7 +133,11 @@ const Header = () => {
           <div className={`bottomBar ${fixedNav}`}>
             <div className={"wrapper  container"}>
               <a className={"brand navbar-brand"} href="/">
-                <img src={logo} className="logo-dark" alt="logo" />
+                <img
+                  src={logo}
+                  className="logo-dark"
+                  alt="Bie-Moni Construction"
+                />
                 <div className="brand-name-wrapper">
                   <span>Bie-Moni</span>
                   <span>Nigeria Limited</span>
@@ -146,8 +150,8 @@ const Header = () => {
                 className={"large-screen-navigation container"}
                 ref={navElement}
               >
-                <li className={"mainNavLink"}>
-                  <NavLink to="#">Home</NavLink>
+                <li className={"mainNavLink"} onClick={mobileNavClickHandler}>
+                  <a href="/#home">Home</a>
                 </li>
                 <li
                   className={"mainNavLink"}

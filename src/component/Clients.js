@@ -60,7 +60,7 @@ const Clients = (props) => {
           ssr={false} // means to render carousel on server-side.
           infinite={true}
           autoPlay={true}
-          autoPlaySpeed={10000}
+          autoPlaySpeed={2000}
           keyBoardControl={true}
           // customTransition="all .5"
           transitionDuration={1000}
