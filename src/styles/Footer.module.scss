@@ -117,7 +117,7 @@ $headingFont: "Playfair Display", serif;
         }
       } //subscribes ends
       .aboutUs {
-        font-size: 1.4rem;
+        font-size: $bodyTextSize;
         // order: 3;
         color: rgba($color: #ffffff, $alpha: 0.9);
         h6 {
@@ -153,7 +153,7 @@ $headingFont: "Playfair Display", serif;
         a {
           color: rgba($color: #ffffff, $alpha: 0.9);
 
-          font-size: 1.4rem;
+          font-size: $bodyTextSize;
           text-decoration: none;
           transition: 0.3s;
           &:hover {
@@ -177,7 +177,7 @@ $headingFont: "Playfair Display", serif;
           }
         }
         p {
-          font-size: 1.4rem;
+          font-size: $bodyTextSize;
           color: rgba($color: #ffffff, $alpha: 0.9);
           span {
             color: $primaryRed;

@@ -14,6 +14,9 @@ import waterIcon from "../img/water.svg";
 import transformerIcon from "../img/transformer.svg";
 import welderIcon from "../img/welder.svg";
 import plugIcon from "../img/plug.svg";
+import safetyIcon from "../img/safety.svg";
+import qualityIcon from "../img/quality.svg";
+import sustainabilityIcon from "../img/sustainable.svg";
 import road from "../img/road.png";
 import faq from "../img/faq.jpg";
 import Services from "./Services";
@@ -172,13 +175,43 @@ const Landing = () => {
           </h3>
           <div className={styles.valueWrapper}>
             <Fade down>
-              <div>Safety</div>
+              <div className={styles.cardParent}>
+                <div className={styles.front}>
+                  <img src={safetyIcon} alt="safety" />
+                  <div>Safety</div>
+                </div>
+                <div className={styles.back}>
+                  <span>Bie-Moni</span> is committed to protecting the safety
+                  our staff,suppliers, our clients, and general public in
+                  relation to all our activities undertaken in our offices and
+                  on our construction sites.
+                </div>
+              </div>
             </Fade>
             <Fade up>
-              <div>Quality</div>
+              <div className={styles.cardParent}>
+                <div className={styles.front}>
+                  <img src={qualityIcon} alt="safety" />
+                  <div>Quality</div>
+                </div>
+                <div className={styles.back}>
+                  At <span>Bie-Moni</span>, we consistently provide products and
+                  services that meet or exceeds the requirement and expectation
+                  of our customers.
+                </div>
+              </div>
             </Fade>
             <Fade down>
-              <div>Sustainability</div>
+              <div className={styles.cardParent}>
+                <div className={styles.front}>
+                  <img src={sustainabilityIcon} alt="safety" />
+                  <div>Sustainability</div>
+                </div>
+                <div className={styles.back}>
+                  We are client satisfaction oriented therefore we take adequate
+                  measures to ensure all projects executed are sustainable.
+                </div>
+              </div>
             </Fade>
           </div>
         </div>
@@ -194,7 +227,7 @@ const Landing = () => {
               We Provide High Quality Electrical and Civil Construction
               Solutions For Residentials & Industries!
             </p>
-            <div>Whats Our Offers</div>
+            <div>What we offer</div>
             <span></span>
           </div>
           <Services />

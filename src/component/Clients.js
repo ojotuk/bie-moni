@@ -60,7 +60,7 @@ const Clients = (props) => {
           ssr={false} // means to render carousel on server-side.
           infinite={true}
           autoPlay={true}
-          autoPlaySpeed={2000}
+          autoPlaySpeed={1000}
           keyBoardControl={true}
           // customTransition="all .5"
           transitionDuration={1000}
@@ -69,6 +69,7 @@ const Clients = (props) => {
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
           // afterChange={() => setSlide(!slider)}
+          // focusOnSelect={false}
         >
           {descriptionSlide.map((slide, index) => (
             <div className="d-flex justify-content-center">

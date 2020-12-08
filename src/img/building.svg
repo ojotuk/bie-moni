@@ -1,43 +1,43 @@
 <svg width="464" height="464" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
  <g class="layer">
   <title>Layer 1</title>
-  <path d="m400,320l16,0l0,16l-16,0l0,-16zm0,0" id="svg_1"/>
-  <path d="m336,256l16,0l0,16l-16,0l0,-16zm0,0" id="svg_2"/>
-  <path d="m336,320l16,0l0,16l-16,0l0,-16zm0,0" id="svg_3"/>
-  <path d="m368,320l16,0l0,16l-16,0l0,-16zm0,0" id="svg_4"/>
-  <path d="m368,256l16,0l0,16l-16,0l0,-16zm0,0" id="svg_5"/>
-  <path d="m176,288l16,0l0,16l-16,0l0,-16zm0,0" id="svg_6"/>
-  <path d="m400,256l16,0l0,16l-16,0l0,-16zm0,0" id="svg_7"/>
-  <path d="m208,288l16,0l0,16l-16,0l0,-16zm0,0" id="svg_8"/>
+  <path d="m400,320l16,0l0,16l-16,0l0,-16zm0,0" fill="#ffffff" id="svg_1"/>
+  <path d="m336,256l16,0l0,16l-16,0l0,-16zm0,0" fill="#ffffff" id="svg_2"/>
+  <path d="m336,320l16,0l0,16l-16,0l0,-16zm0,0" fill="#ffffff" id="svg_3"/>
+  <path d="m368,320l16,0l0,16l-16,0l0,-16zm0,0" fill="#ffffff" id="svg_4"/>
+  <path d="m368,256l16,0l0,16l-16,0l0,-16zm0,0" fill="#ffffff" id="svg_5"/>
+  <path d="m176,288l16,0l0,16l-16,0l0,-16zm0,0" fill="#ffffff" id="svg_6" transform="matrix(1 0 0 1 0 0)"/>
+  <path d="m400,256l16,0l0,16l-16,0l0,-16zm0,0" fill="#ffffff" id="svg_7"/>
+  <path d="m208,288l16,0l0,16l-16,0l0,-16zm0,0" fill="#ffffff" id="svg_8" transform="matrix(1 0 0 1 0 0)"/>
   <path d="m288,0l144,0l0,16l-144,0l0,-16zm0,0" fill="#ef474b" id="svg_9"/>
-  <path d="m336,384l48,0l0,48l-48,0l0,-48zm0,0" id="svg_10"/>
-  <path d="m240,288l16,0l0,16l-16,0l0,-16zm0,0" id="svg_11"/>
-  <path d="m336,64l16,0l0,16l-16,0l0,-16zm0,0" id="svg_12"/>
-  <path d="m368,64l16,0l0,16l-16,0l0,-16zm0,0" id="svg_13"/>
-  <path d="m304,64l16,0l0,16l-16,0l0,-16zm0,0" id="svg_14"/>
-  <path d="m400,64l16,0l0,16l-16,0l0,-16zm0,0" id="svg_15"/>
-  <path d="m272,288l16,0l0,16l-16,0l0,-16zm0,0" id="svg_16"/>
-  <path d="m368,128l16,0l0,16l-16,0l0,-16zm0,0" id="svg_17"/>
-  <path d="m400,128l16,0l0,16l-16,0l0,-16zm0,0" id="svg_18"/>
+  <path d="m336,384l48,0l0,48l-48,0l0,-48zm0,0" fill="#ef474b" id="svg_10" transform="matrix(1 0 0 1 0 0)"/>
+  <path d="m240,288l16,0l0,16l-16,0l0,-16zm0,0" fill="#ffffff" id="svg_11" transform="matrix(1 0 0 1 0 0)"/>
+  <path d="m336,64l16,0l0,16l-16,0l0,-16zm0,0" fill="#ffffff" id="svg_12"/>
+  <path d="m368,64l16,0l0,16l-16,0l0,-16zm0,0" fill="#ffffff" id="svg_13"/>
+  <path d="m304,64l16,0l0,16l-16,0l0,-16zm0,0" fill="#ffffff" id="svg_14"/>
+  <path d="m400,64l16,0l0,16l-16,0l0,-16zm0,0" fill="#ffffff" id="svg_15"/>
+  <path d="m272,288l16,0l0,16l-16,0l0,-16zm0,0" fill="#ffffff" id="svg_16" transform="matrix(1 0 0 1 0 0)"/>
+  <path d="m368,128l16,0l0,16l-16,0l0,-16zm0,0" fill="#ffffff" id="svg_17"/>
+  <path d="m400,128l16,0l0,16l-16,0l0,-16zm0,0" fill="#ffffff" id="svg_18"/>
   <path d="m288,176l144,0l0,48l-112,0l0,16l112,0l0,48l-96,0l0,16l96,0l0,48l-96,0l0,16l64,0l0,64l48,0l0,-400l-176,0l0,176l16,0l0,-32zm0,-128l144,0l0,48l-144,0l0,-48zm0,64l144,0l0,48l-144,0l0,-48zm0,0" fill="#ffffff" id="svg_19"/>
-  <path d="m336,128l16,0l0,16l-16,0l0,-16zm0,0" id="svg_20"/>
-  <path d="m304,128l16,0l0,16l-16,0l0,-16zm0,0" id="svg_21"/>
+  <path d="m336,128l16,0l0,16l-16,0l0,-16zm0,0" fill="#ffffff" id="svg_20"/>
+  <path d="m304,128l16,0l0,16l-16,0l0,-16zm0,0" fill="#ffffff" id="svg_21"/>
   <path d="m32,400l64,0l0,32l32,0l0,-192l16,0l0,-32l48,0l0,-80l-176,0l0,304l16,0l0,-32zm80,-256l64,0l0,48l-64,0l0,-48zm-80,0l64,0l0,48l-64,0l0,-48zm0,64l64,0l0,48l-64,0l0,-48zm0,64l64,0l0,48l-64,0l0,-48zm0,64l64,0l0,48l-64,0l0,-48zm0,0" fill="#ffffff" id="svg_22" transform="matrix(1 0 0 1 0 0)"/>
-  <path d="m48,224l32,0l0,16l-32,0l0,-16zm0,0" id="svg_23"/>
-  <path d="m48,288l32,0l0,16l-32,0l0,-16zm0,0" id="svg_24"/>
-  <path d="m48,160l32,0l0,16l-32,0l0,-16zm0,0" id="svg_25"/>
-  <path d="m128,160l32,0l0,16l-32,0l0,-16zm0,0" id="svg_26"/>
-  <path d="m48,352l32,0l0,16l-32,0l0,-16zm0,0" id="svg_27"/>
-  <path d="m456,448l-448,0c-4.41406,0 -8,3.58594 -8,8l0,8l464,0l0,-8c0,-4.40625 -3.58594,-8 -8,-8zm0,0" id="svg_28"/>
-  <path d="m32,96l144,0l0,16l-144,0l0,-16zm0,0" id="svg_29"/>
-  <path d="m48,416l32,0l0,16l-32,0l0,-16zm0,0" id="svg_30"/>
-  <path d="m208,368l48,0l0,64l-48,0l0,-64zm0,0" id="svg_31"/>
+  <path d="m48,224l32,0l0,16l-32,0l0,-16zm0,0" fill="#ffffff" id="svg_23" transform="matrix(1 0 0 1 0 0)"/>
+  <path d="m48,288l32,0l0,16l-32,0l0,-16zm0,0" fill="#ffffff" id="svg_24" transform="matrix(1 0 0 1 0 0)"/>
+  <path d="m48,160l32,0l0,16l-32,0l0,-16zm0,0" fill="#ffffff" id="svg_25" transform="matrix(1 0 0 1 0 0)"/>
+  <path d="m128,160l32,0l0,16l-32,0l0,-16zm0,0" fill="#ffffff" id="svg_26"/>
+  <path d="m48,352l32,0l0,16l-32,0l0,-16zm0,0" fill="#ffffff" id="svg_27" transform="matrix(1 0 0 1 0 0)"/>
+  <path d="m456,448l-448,0c-4.41406,0 -8,3.58594 -8,8l0,8l464,0l0,-8c0,-4.40625 -3.58594,-8 -8,-8zm0,0" fill="#ffffff" id="svg_28"/>
+  <path d="m32,96l144,0l0,16l-144,0l0,-16zm0,0" fill="#ffffff" id="svg_29"/>
+  <path d="m48,416l32,0l0,16l-32,0l0,-16zm0,0" fill="#ffffff" id="svg_30" transform="matrix(1 0 0 1 0 0)"/>
+  <path d="m208,368l48,0l0,64l-48,0l0,-64zm0,0" fill="#ffffff" id="svg_31" transform="matrix(1 0 0 1 0 0)"/>
   <path d="m320,432l0,-176l-176,0l0,176l48,0l0,-80l80,0l0,80l48,0zm-160,-112l0,-48l144,0l0,48l-144,0zm0,0" fill="#ef474b" id="svg_32" transform="matrix(1 0 0 1 0 0)"/>
-  <path d="m336,192l16,0l0,16l-16,0l0,-16zm0,0" id="svg_33"/>
+  <path d="m336,192l16,0l0,16l-16,0l0,-16zm0,0" fill="#ffffff" id="svg_33"/>
   <path d="m104,18.41406l-73.90234,61.58594l147.80468,0l-73.90234,-61.58594zm0,0" fill="#ef474b" id="svg_34" transform="matrix(1 0 0 1 0 0)"/>
   <path d="m288,224l-128,0l0,16l144,0l0,-16l-16,0zm0,0" fill="#ef474b" id="svg_35"/>
-  <path d="m304,192l16,0l0,16l-16,0l0,-16zm0,0" id="svg_36"/>
-  <path d="m400,192l16,0l0,16l-16,0l0,-16zm0,0" id="svg_37"/>
-  <path d="m368,192l16,0l0,16l-16,0l0,-16zm0,0" id="svg_38"/>
+  <path d="m304,192l16,0l0,16l-16,0l0,-16zm0,0" fill="#ffffff" id="svg_36"/>
+  <path d="m400,192l16,0l0,16l-16,0l0,-16zm0,0" fill="#ffffff" id="svg_37"/>
+  <path d="m368,192l16,0l0,16l-16,0l0,-16zm0,0" fill="#ffffff" id="svg_38"/>
  </g>
 </svg>
